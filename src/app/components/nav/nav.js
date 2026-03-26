@@ -4,12 +4,30 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation';
 
 const navContent = {
-    'All': pageRoutes.index,
-    'My Core Purpose': pageRoutes.purpose,
-    'Case Studies': pageRoutes.caseStudies,
-    'Portfolio': pageRoutes.portfolio,
-    'Resume': pageRoutes.resume,
-    'Reviews': pageRoutes.reviews,
+    'All': {
+        id: 'all',
+        link: pageRoutes.index,
+    },
+    'My Core Purpose': {
+        id: 'purpose',
+        link: pageRoutes.purpose,
+    },
+    'Case Studies': {
+        id: 'case-studies',
+        link: pageRoutes.caseStudies,
+    },
+    'Portfolio': {
+        id: 'portfolio',
+        link: pageRoutes.portfolio,
+    },
+    'Resume': {
+        id: 'resume',
+        link: pageRoutes.resume,
+    },
+    'Reviews': {
+        id: 'reviews',
+        link: pageRoutes.reviews,
+    },
 }
 
 const navButtonHandler = (e) => {
@@ -25,7 +43,7 @@ const navButtonHandler = (e) => {
 
 export default function Nav() {
     const pathname = usePathname();
-    const pathIndex = Object.values(navContent).indexOf(pathname);
+    const pathIndex = Object.values(navContent).map(x => x.link).indexOf(pathname);
     const currentPageName = Object.keys(navContent)[pathIndex];
 
     return (
@@ -53,7 +71,7 @@ export default function Nav() {
                     >
                         {Object.keys(navContent).map(x => 
                             <li key={x.replace(/\s/g, '-')}>
-                                <Link href={navContent[x]} onClick={() =>{setTimeout(navButtonHandler, 10)}}>{x}</Link>
+                                <Link href={navContent[x].link} onClick={() =>{setTimeout(navButtonHandler, 10)}}>{x}</Link>
                             </li>
                         )}
                     </ul>

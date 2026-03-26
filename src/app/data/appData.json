@@ -1,0 +1,86 @@
+{
+    "Jackbox Wheel": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/wheel.png",
+        "imageAlt": "spinner wheel icon",
+        "category": "portfolio"
+    },
+    "Spooterfi": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "videovomit.tv": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "CRO CLI / CAW": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "GTK": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "GoG Comm": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "Med Tool": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "Tierator": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "Time Conversion Calculator": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "Voyage of the Dead": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "American Ninja Warrior Challenge": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "category": "portfolio"
+    },
+    "Resume": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/resume.png",
+        "imageAlt": "icon of a paper with a person waving",
+        "category": "resume"
+    },
+    "Reviews": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/reviews.png",
+        "imageAlt": "icon of a person with a speech bubble",
+        "category": "reviews"
+    },
+    "Purpose": {
+        "link": "#",
+        "imageSrc": "/homepage-icons/purpose.png",
+        "imageAlt": "bullseye target icon",
+        "category": "purose"
+    }
+}
