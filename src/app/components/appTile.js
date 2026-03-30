@@ -11,15 +11,25 @@ import Link from "next/link";
 
 export default function AppTile(props) {
     return (
-        <Link href={props.link} className="mx-auto flex flex-col justify-center items-center my-4">
-            <Image 
-                className=""
-                src={props.imageSrc}
-                alt={props.imageAlt}
-                width={100}
-                height={100}
-                priority
-            />
+        <Link href={props.link} className="app-tile-anchor mx-auto flex flex-col justify-center items-center my-4">
+            <div className="app-image-container w-[100px] h-[100px] relative">
+                <Image 
+                    className="app-image absolute top-0 left-0"
+                    src={props.imageSrc}
+                    alt={props.imageAlt}
+                    width={100}
+                    height={100}
+                    priority
+                />
+                <Image
+                    className="app-image-hover absolute top-0 left-0"
+                    src={props.hoverSrc}
+                    alt={props.imageAlt}
+                    width={100}
+                    height={100}
+                    priority
+                />
+            </div>
             <span>{props.name}</span>
         </Link>
     );

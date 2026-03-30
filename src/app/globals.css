@@ -79,3 +79,25 @@ nav, main {
     top: 50%;
     transform: translateY(-50%);
 }
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.app-tile-anchor .app-image {
+    display: block;
+}
+.app-tile-anchor .app-image-hover {
+    display: none;
+}
+
+.app-tile-anchor:hover .app-image {
+    display: none;
+}
+.app-tile-anchor:hover .app-image-hover {
+    display: block;
+}

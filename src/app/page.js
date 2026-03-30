@@ -21,6 +21,7 @@ export default function Home() {
                                 link={appData[x].link}
                                 imageSrc={appData[x].imageSrc}
                                 imageAlt={appData[x].imageAlt}
+                                hoverSrc={appData[x].hoverSrc}
                                 name={x}
                             />
                         )
