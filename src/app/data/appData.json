@@ -1,97 +1,97 @@
 {
     "Jackbox Wheel": {
-        "link": "/wheel",
+        "link": "/projects/jackbox-wheel",
         "imageSrc": "/homepage-icons/wheel.png",
         "imageAlt": "spinner wheel icon",
         "hoverSrc": "/homepage-icons/wheel-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "Spooterfi": {
-        "link": "#",
+        "link": "/projects/spooterfi",
         "imageSrc": "/homepage-icons/spooterfi.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/spooterfi-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "videovomit.tv": {
-        "link": "#",
+        "link": "/projects/videovomit-tv",
         "imageSrc": "/homepage-icons/vvtv.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/vvtv-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "CRO CLI / CAW": {
-        "link": "#",
+        "link": "/projects/cro-cli-caw",
         "imageSrc": "/homepage-icons/cro-cli.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/cro-cli-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "GTK": {
-        "link": "#",
+        "link": "/projects/guess-the-killer",
         "imageSrc": "/homepage-icons/gtk.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/gtk-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "GoG Comm": {
-        "link": "#",
+        "link": "/projects/gogcomm",
         "imageSrc": "/homepage-icons/gogcomm.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/gogcomm-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "Med Tool": {
-        "link": "#",
+        "link": "/projects/med-tool",
         "imageSrc": "/homepage-icons/med-tool.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/med-tool-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "Tierator": {
-        "link": "#",
+        "link": "/projects/tierator",
         "imageSrc": "/homepage-icons/tierator.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/tierator-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "Time Conversion Calculator": {
-        "link": "#",
+        "link": "/projects/time-conversion-calc",
         "imageSrc": "/homepage-icons/time-conversion-calc.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/time-conversion-calc-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "Voyage of the Dead": {
-        "link": "#",
+        "link": "/projects/voyage-of-the-dead",
         "imageSrc": "/homepage-icons/votd.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/votd-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "American Ninja Warrior Challenge": {
-        "link": "#",
+        "link": "/projects/american-ninja-warrior-challenge",
         "imageSrc": "/homepage-icons/anw.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/anw-hover.png",
-        "category": "portfolio"
+        "category": "projects"
     },
     "Resume": {
-        "link": "#",
+        "link": "/resume",
         "imageSrc": "/homepage-icons/resume.png",
         "imageAlt": "icon of a paper with a person waving",
         "hoverSrc": "/homepage-icons/resume-hover.png",
         "category": "resume"
     },
     "Reviews": {
-        "link": "#",
+        "link": "/reviews",
         "imageSrc": "/homepage-icons/reviews.png",
         "imageAlt": "icon of a person with a speech bubble",
         "hoverSrc": "/homepage-icons/reviews-hover.png",
         "category": "reviews"
     },
     "Purpose": {
-        "link": "#",
+        "link": "/purpose",
         "imageSrc": "/homepage-icons/purpose.png",
         "imageAlt": "bullseye target icon",
         "hoverSrc": "/homepage-icons/purpose-hover.png",

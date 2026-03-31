@@ -3,7 +3,9 @@ import pageRoutes from "@/pageRoutes";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 
-const navContent = {
+import { camelCaseToDashes } from "@/app/helpers/helpers";
+
+const navContent2 = {
     'All': {
         id: 'all',
         link: pageRoutes.index,
@@ -16,9 +18,9 @@ const navContent = {
         id: 'case-studies',
         link: pageRoutes.caseStudies,
     },
-    'Portfolio': {
-        id: 'portfolio',
-        link: pageRoutes.portfolio,
+    'Projects': {
+        id: 'projects',
+        link: pageRoutes.projects,
     },
     'Resume': {
         id: 'resume',
@@ -29,6 +31,14 @@ const navContent = {
         link: pageRoutes.reviews,
     },
 }
+
+const navContentKeys = Object.keys(pageRoutes).filter(x => pageRoutes[x].navDisplay != null);
+let navContent = {};
+navContentKeys.forEach((key) => {
+    navContent[key] = {
+        'link': pageRoutes[key].link,
+    };
+});
 
 const navButtonHandler = (e) => {
     // const dropdown = e.target.closest('button').nextElementSibling;
@@ -48,7 +58,7 @@ export default function Nav() {
 
     return (
         <nav className="flex m-3 w-[calc(100% - calc(var(--spacing) * 3))] justify-between border-b-3 border-current mt-0">
-            <Link href={pageRoutes.index}
+            <Link href={pageRoutes.index.link}
                 className="invert-colors rounded-t-[3px] px-3 py-0.1 text-xl flex items-center"
             >
                 Holly M. Phillips
@@ -66,11 +76,12 @@ export default function Nav() {
                     className="absolute w-[200px] text-right top-full right-0 overflow-hidden"
                     style={{ maxHeight: '0px' }}
                 >
-                    <ul id="nav-select" defaultValue={pageRoutes.index}
+                    <ul id="nav-select" defaultValue={pageRoutes.index.link}
                         className="cursor-pointer p-3 border-b-3 border-x-3 rounded-bl rounded-br rounded-b-md text-lg"
                     >
                         {Object.keys(navContent).map(x => 
-                            <li key={x.replace(/\s/g, '-')}>
+                            // <li key={x.replace(/\s/g, '-')}>
+                            <li key={camelCaseToDashes(x)} data-x={camelCaseToDashes(x)}>
                                 <Link href={navContent[x].link} onClick={() =>{setTimeout(navButtonHandler, 10)}}>{x}</Link>
                             </li>
                         )}
