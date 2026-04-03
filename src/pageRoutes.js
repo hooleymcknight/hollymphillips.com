@@ -7,14 +7,37 @@ const pageRoutes = {
         'link': '/',
         'navDisplay': 'All',
     },
-    'account': {
-        'link': '/account',
+    // 'account': {
+    //     'link': '/account',
+    // },
+    // 'register': {
+    //     'link': '/register',
+    // },
+    // 'signin': {
+    //     'link': '/api/auth/signin?callbackUrl=%2F',
+    // },
+    // 'signout': {
+    //     'link': '/api/auth/signout?callbackUrl=%2F',
+    // },
+
+    'projects': {
+        'link': '/projects',
+        'navDisplay': 'Projects',
+        'sublinks': {
+            'jackboxWheel': '/jackbox-wheel',
+            'spooterfi': '/spooterfi',
+            'vvtv': '/videovomit-tv',
+            'caw': '/cro-cli-caw',
+            'gtk': '/guess-the-killer',
+            'gogcomm': '/gogcomm',
+            'medTool': '/med-tool',
+            'tierator': '/tierator',
+            'timeConvCalc': '/time-conversion-calculator',
+            'votd': '/voyage-of-the-dead',
+            'anw': '/american-ninja-warrior-challenge',
+        }
     },
-    'register': {
-        'link': '/register',
-    },
-    // 'signin': '/api/auth/signin?callbackUrl=%2F',
-    // 'signout': '/api/auth/signout?callbackUrl=%2F',
+
     'purpose': {
         'link': '/purpose',
         'navDisplay': 'Purpose',
@@ -30,23 +53,6 @@ const pageRoutes = {
     'reviews': {
         'link': '/reviews',
         'navDisplay': 'Reviews',
-    },
-
-    'projects': {
-        'link': '/projects',
-        'sublinks': {
-            'jackboxWheel': '/jackbox-wheel',
-            'spooterfi': '/spooterfi',
-            'videovomitTv': '/videovomit-tv',
-            'croCliCaw': '/cro-cli-caw',
-            'gtk': '/guess-the-killer',
-            'gogcomm': '/gogcomm',
-            'medTool': '/med-tool',
-            'tierator': '/tierator',
-            'timeConvCalc': '/time-conversion-calculator',
-            'votd': '/voyage-of-the-dead',
-            'anw': '/american-ninja-warrior-challenge',
-        }
     }
 }
 

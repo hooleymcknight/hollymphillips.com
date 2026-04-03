@@ -4,28 +4,21 @@
  */
 
 import AppTile from "./components/appTile";
+import AppTileGrid from "./components/appTileGrid";
 import appData from './data/appData.json';
+import { getAppTileData } from "./helpers/helpers";
 
 // reference:
 // https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/2655288/palm-v-56-1020.1349135797.jpg?quality=90&strip=all
+
+const indexData = getAppTileData();
 
 export default function Home() {
     return (
         <>
             <main className="content-container">
                 <div className="grid grid-cols-4 justify-center font-sans w-full">
-                     {
-                        Object.keys(appData).map(x => 
-                            <AppTile
-                                key={x}
-                                link={appData[x].link}
-                                imageSrc={appData[x].imageSrc}
-                                imageAlt={appData[x].imageAlt}
-                                hoverSrc={appData[x].hoverSrc}
-                                name={x}
-                            />
-                        )
-                     }
+                     <AppTileGrid data={indexData} />
                 </div>
             </main>
         </>

@@ -3,14 +3,12 @@
  * the parent must be server.
  */
 
+import pageRoutes from "@/pageRoutes";
 import AppTile from "../components/appTile";
 import appData from '../data/appData.json';
+import { camelCaseToDashes, findKeyRecursive, getAppTileData, toCamelCase } from '@/app/helpers/helpers';
 
-const projectsDataKeys = Object.keys(appData).filter(x => appData[x].category === 'projects');
-let projectsData = {};
-projectsDataKeys.forEach((key) => {
-    projectsData[key] = appData[key];
-});
+const projectsData = getAppTileData('projects');
 
 // reference:
 // https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/2655288/palm-v-56-1020.1349135797.jpg?quality=90&strip=all

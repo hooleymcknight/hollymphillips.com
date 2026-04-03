@@ -10,8 +10,12 @@ import Link from "next/link";
 // https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/2655288/palm-v-56-1020.1349135797.jpg?quality=90&strip=all
 
 export default function AppTile(props) {
+    // console.log(typeof(props.link))
+    const link = typeof(props.link) == 'string' ? props.link : '#';
+    // console.log('link:', link);
+
     return (
-        <Link href={props.link} className="app-tile-anchor mx-auto flex flex-col justify-center items-center my-4">
+        <Link href={link} className="app-tile-anchor mx-auto flex flex-col justify-center items-center my-4">
             <div className="app-image-container w-[100px] h-[100px] relative">
                 <Image 
                     className="app-image absolute top-0 left-0"

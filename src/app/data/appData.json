@@ -1,97 +1,97 @@
 {
     "Jackbox Wheel": {
-        "link": "/projects/jackbox-wheel",
+        "id": "jackboxWheel",
         "imageSrc": "/homepage-icons/wheel.png",
         "imageAlt": "spinner wheel icon",
         "hoverSrc": "/homepage-icons/wheel-hover.png",
         "category": "projects"
     },
     "Spooterfi": {
-        "link": "/projects/spooterfi",
+        "id": "spooterfi",
         "imageSrc": "/homepage-icons/spooterfi.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/spooterfi-hover.png",
         "category": "projects"
     },
     "videovomit.tv": {
-        "link": "/projects/videovomit-tv",
+        "id": "vvtv",
         "imageSrc": "/homepage-icons/vvtv.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/vvtv-hover.png",
         "category": "projects"
     },
     "CRO CLI / CAW": {
-        "link": "/projects/cro-cli-caw",
+        "id": "caw",
         "imageSrc": "/homepage-icons/cro-cli.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/cro-cli-hover.png",
         "category": "projects"
     },
     "GTK": {
-        "link": "/projects/guess-the-killer",
+        "id": "gtk",
         "imageSrc": "/homepage-icons/gtk.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/gtk-hover.png",
         "category": "projects"
     },
     "GoG Comm": {
-        "link": "/projects/gogcomm",
+        "id": "gogcomm",
         "imageSrc": "/homepage-icons/gogcomm.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/gogcomm-hover.png",
         "category": "projects"
     },
     "Med Tool": {
-        "link": "/projects/med-tool",
+        "id": "medTool",
         "imageSrc": "/homepage-icons/med-tool.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/med-tool-hover.png",
         "category": "projects"
     },
     "Tierator": {
-        "link": "/projects/tierator",
+        "id": "tierator",
         "imageSrc": "/homepage-icons/tierator.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/tierator-hover.png",
         "category": "projects"
     },
     "Time Conversion Calculator": {
-        "link": "/projects/time-conversion-calc",
+        "id": "timeConvCalc",
         "imageSrc": "/homepage-icons/time-conversion-calc.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/time-conversion-calc-hover.png",
         "category": "projects"
     },
     "Voyage of the Dead": {
-        "link": "/projects/voyage-of-the-dead",
+        "id": "votd",
         "imageSrc": "/homepage-icons/votd.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/votd-hover.png",
         "category": "projects"
     },
     "American Ninja Warrior Challenge": {
-        "link": "/projects/american-ninja-warrior-challenge",
+        "id": "anw",
         "imageSrc": "/homepage-icons/anw.png",
         "imageAlt": "dev project",
         "hoverSrc": "/homepage-icons/anw-hover.png",
         "category": "projects"
     },
     "Resume": {
-        "link": "/resume",
+        "id": "resume",
         "imageSrc": "/homepage-icons/resume.png",
         "imageAlt": "icon of a paper with a person waving",
         "hoverSrc": "/homepage-icons/resume-hover.png",
         "category": "resume"
     },
     "Reviews": {
-        "link": "/reviews",
+        "id": "reviews",
         "imageSrc": "/homepage-icons/reviews.png",
         "imageAlt": "icon of a person with a speech bubble",
         "hoverSrc": "/homepage-icons/reviews-hover.png",
         "category": "reviews"
     },
     "Purpose": {
-        "link": "/purpose",
+        "id": "purpose",
         "imageSrc": "/homepage-icons/purpose.png",
         "imageAlt": "bullseye target icon",
         "hoverSrc": "/homepage-icons/purpose-hover.png",
