@@ -3,10 +3,8 @@
  * the parent must be server.
  */
 
-import pageRoutes from "@/pageRoutes";
 import AppTile from "../components/appTile";
-import appData from '../data/appData.json';
-import { camelCaseToDashes, findKeyRecursive, getAppTileData, toCamelCase } from '@/app/helpers/helpers';
+import { getAppTileData } from '@/app/helpers/helpers';
 
 const projectsData = getAppTileData('projects');
 

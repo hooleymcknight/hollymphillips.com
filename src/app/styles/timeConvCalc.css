@@ -3,7 +3,7 @@
     max-width: 800px;
     margin: auto;
     padding-bottom: 40px;
-    color: var(--primary-text);
+    color: var(--foreground);
 }
 
 .time-calc a {
@@ -11,7 +11,7 @@
 }
 
 .time-calc a:hover {
-    color: var(--primary-purple);
+    color: var(--foreground);
 }
 
 .time-calc form[id=time-conversion] [class=form-section] {
@@ -32,16 +32,15 @@
     position: absolute;
     top: -24px;
     font-size: 16px;
-    color: var(--primary-purple);
+    color: var(--foreground);
     font-weight: 700;
 }
 
 .time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] select, .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] select {
     padding: 5px 30px 4px 8px;
     appearance: auto;
-    border: 2px solid var(--dark-bg);
+    border: 2px solid var(--foreground);
     font-size: 18px;
-    font-family: Titillium Web;
 }
 
 .time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] select:focus-visible, .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] select:focus-visible {
@@ -55,7 +54,7 @@
 }
 
 .time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] input, .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] input {
-    border: 2px solid var(--dark-bg);
+    border: 2px solid var(--foreground);
     padding: 7px 8px;
     font-size: 18px;
 }
@@ -83,10 +82,9 @@
 }
 
 .time-calc form[id=time-conversion] [class=form-section] button[id=get-time] {
-    font-family: Titillium Web;
-    background: var(--primary-purple);
-    border: 2px solid var(--primary-purple);
-    color: var(--alt-text);
+    background: var(--foreground);
+    border: 2px solid var(--foreground);
+    color: var(--background);
     padding: 12px 18px;
     border-radius: 8px;
     text-transform: uppercase;
@@ -98,8 +96,8 @@
 }
 
 .time-calc form[id=time-conversion] [class=form-section] button[id=get-time]:hover {
-    background-color: var(--alt-purple);
-    color: var(--primary-text);
+    background-color: var(--background);
+    color: var(--foreground);
 }
 
 @media (max-width: 450px) {

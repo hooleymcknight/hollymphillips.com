@@ -29,6 +29,10 @@ body {
     background-repeat: no-repeat; */
 }
 
+select, option, button {
+    cursor: pointer;
+}
+
 nav, main {
     max-width: 1000px;
     margin-left: auto;

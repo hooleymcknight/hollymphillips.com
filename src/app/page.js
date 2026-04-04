@@ -3,9 +3,7 @@
  * the parent must be server.
  */
 
-import AppTile from "./components/appTile";
 import AppTileGrid from "./components/appTileGrid";
-import appData from './data/appData.json';
 import { getAppTileData } from "./helpers/helpers";
 
 // reference:
