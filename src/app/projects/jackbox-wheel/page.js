@@ -1,7 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
 
-// import styles from '../styles/projects/Wheel.module.scss';
 import Wheel from '../projects/wheel/wheel';
 import GamesList from '../projects/wheel/gamesList';
 import WheelTitle from '../projects/wheel/wheelTitle';
