@@ -4,6 +4,7 @@ import SessionProvider from "./SessionProvider";
 import Nav from "./components/nav/nav";
 import { Jersey_25, Tiny5, Coral_Pixels, Jersey_15_Charted } from "next/font/google";
 import "./globals.css";
+import Grain from './components/grain';
 
 const jersey25 = Jersey_25({
     variable: "--font-jersey-25",
@@ -51,14 +52,7 @@ export default async function RootLayout({ children, params }) {
                 className={`${tiny5.variable} ${jersey25.variable} antialiased`}
             >
                 <SessionProvider session={session}>
-                    <div className="grainy-background">
-                        <svg xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
-                            <filter id="grainy-noise">
-                                <feTurbulence type="fractalNoise" baseFrequency="0.3" numOctaves="4" stitchTiles="stitch"/>
-                            </filter>
-                            <rect width='100%' height='100%' filter='url(#grainy-noise)' />
-                        </svg>
-                    </div>
+                    <Grain classes="h-[100vh] fixed" />
                     <Nav />
                     {children}
                 </SessionProvider>

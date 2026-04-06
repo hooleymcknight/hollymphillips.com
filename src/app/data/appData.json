@@ -96,5 +96,12 @@
         "imageAlt": "bullseye target icon",
         "hoverSrc": "/homepage-icons/purpose-hover.png",
         "category": "purose"
+    },
+    "Recommendations": {
+        "id": "recommendations",
+        "imageSrc": "/homepage-icons/recs.png",
+        "imageAlt": "icon of thumbs up and stars",
+        "hoverSrc": "/homepage-icons/recs-hover.png",
+        "category": "recommendations"
     }
 }

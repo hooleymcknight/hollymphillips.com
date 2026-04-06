@@ -53,6 +53,10 @@ const pageRoutes = {
     'reviews': {
         'link': '/reviews',
         'navDisplay': 'Reviews',
+    },
+    'recommendations': {
+        'link': '/recommendations',
+        'navDisplay': 'Recommendations'
     }
 }
 

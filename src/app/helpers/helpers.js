@@ -54,7 +54,6 @@ export const getAppTileData = (searchCategory) => {
         if (searchCategory || topParentCategory != null) {
             const category = getTopParent(appData[key].id);
             thisData[key].link = `${category ? '/' + category : ''}${findKeyRecursive(pageRoutes, appData[key].id)[0]}`;
-            console.log(key, thisData[key].link)
         }
     });
 
