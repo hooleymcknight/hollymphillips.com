@@ -92,16 +92,41 @@ h2 {
     font-size: 24px;
 }
 
-.app-tile-anchor .app-image {
+.app-tile-anchor .app-image,
+.resume-img img.img {
     display: block;
 }
-.app-tile-anchor .app-image-hover {
+.app-tile-anchor .app-image-hover,
+.resume-img img.img-hover {
     display: none;
 }
 
-.app-tile-anchor:hover .app-image {
+.app-tile-anchor:hover .app-image,
+.resume-img:hover img.img {
     display: none;
 }
-.app-tile-anchor:hover .app-image-hover {
+.app-tile-anchor:hover .app-image-hover,
+.resume-img:hover img.img-hover {
     display: block;
+}
+
+/* button */
+
+.button {
+    background: var(--foreground);
+    border: 2px solid var(--foreground);
+    color: var(--background);
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.button:hover {
+    background-color: var(--background);
+    color: var(--foreground);
 }

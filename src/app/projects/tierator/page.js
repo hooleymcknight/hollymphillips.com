@@ -13,7 +13,9 @@ export default function Tierator() {
             />
 
             <p className="max-w-[600px] mx-auto">
-                //
+                Tierator was a website that enabled users to create a tier table (as shown above) 
+                with easy-to-use drag and drop features and image export capabilities. This site was 
+                built using VueJS.
             </p>
         </main>
     );

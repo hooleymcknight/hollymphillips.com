@@ -12,6 +12,7 @@ navContentKeys.forEach((key) => {
     navContent[key] = {
         'link': pageRoutes[key].link,
         'navDisplay': pageRoutes[key].navDisplay,
+        'sublinks': pageRoutes[key].sublinks || false,
     };
 });
 
@@ -28,7 +29,19 @@ const navButtonHandler = (e) => {
 export default function Nav() {
     const pathname = usePathname();
     const pathIndex = Object.values(navContent).map(x => x.link).indexOf(pathname);
-    const currentPageName = Object.values(navContent)[pathIndex]?.navDisplay || 'x';
+    let currentPageName = Object.values(navContent)[pathIndex]?.navDisplay || 'All'; // "all" is fallback
+
+    const pathParts = pathname.split('/');
+    const parent = pathParts[1] || null;
+    const child = pathParts[pathParts.length - 1] || null;
+
+    if (parent != child) {
+        const parentObj = Object.values(navContent).filter(x => 
+            x.sublinks
+            && x.link === `/${parent}`
+            && Object.values(x.sublinks).includes(`/${child}`));
+        currentPageName = parentObj.length ? parentObj[0].navDisplay : currentPageName;
+    }
 
     return (
         <nav className="flex m-3 w-[calc(100% - calc(var(--spacing) * 3))] justify-between border-b-3 border-current mt-0">

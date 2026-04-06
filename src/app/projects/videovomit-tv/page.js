@@ -4,17 +4,20 @@ export default function videovomitTv() {
 
     return (
         <main className="max-w-[1000px] mx-auto">
-            <h1 className="text-center">GoG Comm Site</h1>
+            <h1 className="text-center">videovomit.tv</h1>
 
             <video width="800" height="338" controls autoPlay={true} muted className="mx-auto my-8">
-                <source src="/projects/gogcomm/gogcomm-site.mp4" type="video/mp4" />
+                <source src="/projects/vvtv/vvtv-coming-soon.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 
             <p className="max-w-[600px] mx-auto">
-                Built to serve an online community, this site showcases slick, organic-feeling moving features. 
-                Coded using NextJS, GoG Comm also hosts its own contact form and account registration. 
-                Admin users can create events, and all users can make changes to their own accounts as needed.
+                Built using NextJS, videovomit.tv is a website for content creator videovomit. This 
+                site is the central location for all of his online content, including an extensive 
+                video archive (hosted on YouTube), videovomit merchandise (sold through Fourth Wall), 
+                leaderboards for community games, an admin-updatable display of played games (using MySQL + PrismaDB), 
+                podcasts, and much more. Site users can authenticate and interact with the site using 
+                either email or Twitch account.
             </p>
         </main>
     );
