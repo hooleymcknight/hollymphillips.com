@@ -1,5 +1,30 @@
 'use client'
+import Image from "next/image";
 import Link from "next/link";
+
+const contacts = {
+    'name': 'Holly M. Phillips',
+    'cell': {
+        'href': 'tel+19364251225',
+        'alt': 'phone number: 936-425-1225',
+        'text': '(936) 425-1225'
+    },
+    'email': {
+        'href': 'mailto:hollymphillips.dev@gmail.com?subject=Hello Holly!&body=I\'d love to connect with you...',
+        'alt': 'email address: hollymphillips.dev@gmail.com',
+        'text': 'hollymphillips.dev@gmail.com'
+    },
+    'linkedin': {
+        'href': 'https://www.linkedin.com/in/hooleymcknight/',
+        'alt': 'linkedin profile',
+        'text': 'LinkedIn Profile'
+    },
+    'github': {
+        'href': 'https://www.github.com/hooleymcknight/',
+        'alt': 'github profile',
+        'text': 'GitHub Profile'
+    }
+}
 
 export default function Resume() {
 
@@ -14,26 +39,21 @@ export default function Resume() {
                 Download
             </Link>
 
-            <div className="intro-section">
-                <div className="intro-text">
-                    <h2>Holly M. Phillips</h2>
-                    <a href="tel:+19364251225" alt="phone number: 936-425-1225">(936) 425-1225</a>
-                    <a href="mailto:hollymphillips.dev@gmail.com?subject=Hello Holly!&body=I'd love to connect with you..." alt="email address: hollymphillips.dev@gmail.com">hollymphillips.dev@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/hooleymcknight/" target="_blank" alt="linkedin profile">LinkedIn Profile</a>
-                    <a href="https://www.github.com/hooleymcknight/" target="_blank" alt="github profile">GitHub Profile</a>
+            <div className="intro-section flex flex-row flex-row-reverse mx-auto my-8 max-w-[600px] gap-8">
+                <div className="intro-text grow-[0.75] flex flex-col">
+                    <h2>{contacts.name}</h2>
+                    {
+                        Object.keys(contacts).filter(x => typeof(contacts[x]) === 'object').map(x => 
+                            <Link className="hover:underline" key={contacts[x].text} href={contacts[x].href} alt={contacts[x].alt}>{contacts[x].text}</Link>
+                        )
+                    }
                 </div>
 
-                <div className="resume-img block mx-auto w-fit">
-                    <img className="img" src="/brick-grey.png" width={320} height={320} alt="Holly standing in front of a brick wall with an open smile" />
-                    <img className="img-hover" src="/brick-color.jpg" width={320} height={320} alt="Holly standing in front of a brick wall with an open smile" />
+                <div className="resume-img block mx-auto w-fit max-w-[200px]">
+                    <Image className="img" src="/brick-grey.png" width={320} height={320} alt="Holly standing in front of a brick wall with an open smile" />
+                    <Image className="img-hover" src="/brick-color.jpg" width={320} height={320} alt="Holly standing in front of a brick wall with an open smile" />
                 </div>
             </div>
-
-            {/* <img
-                width="800" height="450" className="mx-auto my-8"
-                src="/projects/tierator/tierator_v2.gif"
-                alt="gif of the Tierator site, moving and adding entries"
-            /> */}
 
             <p className="max-w-[600px] mx-auto">
                 
