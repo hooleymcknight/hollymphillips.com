@@ -1,4 +1,34 @@
 {
+    "ref": {
+        "downloadHref": "/ruston-coffee.png",
+        "selfImage": "/brick-grey.png",
+        "selfImageAlt": "Holly standing in front of a brick wall with an open smile",
+        "selfImageHover": "/brick-color.jpg",
+        "selfImageHoverAlt": "Holly standing in front of a brick wall with an open smile"
+    },
+    "Contact Info": {
+        "name": "Holly M. Phillips",
+        "cell": {
+            "href": "tel+19364251225",
+            "alt": "phone number: 936-425-1225",
+            "text": "(936) 425-1225"
+        },
+        "email": {
+            "href": "mailto:hollymphillips.dev@gmail.com?subject=Hello Holly!&body=I'd love to connect with you...",
+            "alt": "email address: hollymphillips.dev@gmail.com",
+            "text": "hollymphillips.dev@gmail.com"
+        },
+        "linkedin": {
+            "href": "https://www.linkedin.com/in/hooleymcknight/",
+            "alt": "linkedin profile",
+            "text": "LinkedIn Profile"
+        },
+        "github": {
+            "href": "https://www.github.com/hooleymcknight/",
+            "alt": "github profile",
+            "text": "GitHub Profile"
+        }
+    },
     "Work Experience": [
         {
             "job title": "Development Lead, Technology",
