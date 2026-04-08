@@ -2,7 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { ref, 'Contact Info' as contacts } from '@/app/data/resume.json'; 
+import { ref, 'Contact Info' as contacts } from '@/app/data/resume.json';
+import { 'Work Experience' as work, 'Skills' as skills, 'Education & Certificates' as education } from '@/app/data/resume.json';
+
+console.log(work);
 
 export default function Resume() {
 
