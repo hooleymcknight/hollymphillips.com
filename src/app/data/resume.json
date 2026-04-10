@@ -31,11 +31,11 @@
     },
     "Work Experience": [
         {
-            "job title": "Development Lead, Technology",
+            "job": "Development Lead, Technology",
             "company": "Fusion 92",
             "location": "Tacoma, Washington",
-            "start date": "February 2025",
-            "end date": "present",
+            "startDate": "February 2025",
+            "endDate": "present",
             "impact": [
                 "Improves team effectiveness and morale by recording and analyzing data regarding workflow processes, then creating and executing improvement plans",
                 "Increases team output by reviewing tasks, determining level of effort, and delegating to appropriate team members",
@@ -44,11 +44,11 @@
             ]
         },
         {
-            "job title": "Front End Developer",
+            "job": "Front End Developer",
             "company": "Fusion 92",
             "location": "Tacoma, Washington",
-            "start date": "September 2023",
-            "end date": "February 2025",
+            "startDate": "September 2023",
+            "endDate": "February 2025",
             "impact": [
                 "Made sites more user-friendly for both clients and their customers by making updates in WordPress (PHP, SASS, JavaScript) and other platforms (Vue, Nuxt)",
                 "Developed functional and accessible email campaigns for various clients",
@@ -56,34 +56,22 @@
             ]
         },
         {
-            "job title": "Freelance Developer",
+            "job": "Freelance Developer",
             "company": "Fusion 92",
             "location": "Tacoma, Washington",
-            "start date": "June 2023",
-            "end date": "September 2023",
+            "startDate": "June 2023",
+            "endDate": "September 2023",
             "impact": [
                 "Empowered clients to update their WordPress content by making field updates that give clients more flexibility and control",
                 "Improved site usability for customers by making styling and content changes with SASS and PHP"
             ]
         },
         {
-            "job title": "Freelance Developer",
-            "company": "Basis LLC",
-            "location": "Tacoma, Washington",
-            "start date": "May 2023",
-            "end date": "October 2023",
-            "impact": [
-                "Developed the new Shopify 2.0 site for AutoBrush (<a href='https://tryautobrush.com' alt='AutoBrush website' target='_blank'>tryautobrush.com</a>) using Dawn theme",
-                "Customized client's Shopify checkout by building checkout extensibility apps",
-                "Supported A/B testing and related analytics development"
-            ]
-        },
-        {
-            "job title": "Front-End Engineer",
+            "job": "Front-End Engineer",
             "company": "surefoot",
             "location": "Seattle, Washington",
-            "start date": "March 2022",
-            "end date": "November 2022",
+            "startDate": "March 2022",
+            "endDate": "November 2022",
             "impact": [
                 "Developed tests for a handful of clients and shared code with the team using Git",
                 "Assisted with processes improvements and documentation of work tools",
@@ -91,11 +79,11 @@
             ]
         },
         {
-            "job title": "Lead Developer",
+            "job": "Lead Developer",
             "company": "Conversion Fanatics",
             "location": "Austin, Texas",
-            "start date": "September 2021",
-            "end date": "March 2022",
+            "startDate": "September 2021",
+            "endDate": "March 2022",
             "impact": [
                 "Installed A/B testing code and revenue tracking scripts for all incoming clients",
                 "Improved developer throughput by training and advising a team of 7 developers",
@@ -103,11 +91,11 @@
             ]
         },
         {
-            "job title": "Front-End JavaScript & jQuery A/B Test Developer",
+            "job": "Front-End JavaScript & jQuery A/B Test Developer",
             "company": "Conversion Fanatics",
             "location": "Austin, Texas",
-            "start date": "October 2019",
-            "end date": "September 2021",
+            "startDate": "October 2019",
+            "endDate": "September 2021",
             "impact": [
                 "Improved website usability by building tests with JavaScript, jQuery, and CSS",
                 "Analyzed test data to determine how to best improve client revenue",
@@ -115,11 +103,11 @@
             ]
         },
         {
-            "job title": "President & Founder, Board of Directors",
+            "job": "President & Founder, Board of Directors",
             "company": "Guild of Geeks",
             "location": "Austin, Texas",
-            "start date": "September 2015",
-            "end date": "August 2020",
+            "startDate": "September 2015",
+            "endDate": "August 2020",
             "impact": [
                 "Started non-profit 501c3 and lead staff of over 20 people until its dissolution in 2020",
                 "Managed all technology for the online community (website front-end & back-end)",
@@ -128,11 +116,11 @@
             ]
         },
         {
-            "job title": "Developer Support",
+            "job": "Developer Support",
             "company": "Gaming Corps",
             "location": "Austin, Texas",
-            "start date": "February 2018",
-            "end date": "November 2018",
+            "startDate": "February 2018",
+            "endDate": "November 2018",
             "impact": [
                 {
                     "<u>Voyage of the Dead</u> (released in 2019)": [

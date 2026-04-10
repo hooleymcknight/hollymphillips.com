@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ref, 'Contact Info' as contacts } from '@/app/data/resume.json';
 import { 'Work Experience' as work, 'Skills' as skills, 'Education & Certificates' as education } from '@/app/data/resume.json';
 
-console.log(work);
+// console.log(work);
 
 export default function Resume() {
 
@@ -20,8 +20,8 @@ export default function Resume() {
                 Download
             </Link>
 
-            <div className="intro-section flex flex-row flex-row-reverse mx-auto my-8 max-w-[600px] gap-8">
-                <div className="intro-text grow-[0.75] flex flex-col">
+            <div id="intro-section" className="flex flex-row flex-row-reverse mx-auto my-8 max-w-[600px] gap-8">
+                <div className="grow-[0.75] flex flex-col">
                     <h2>{contacts.name}</h2>
                     {
                         Object.keys(contacts).filter(x => typeof(contacts[x]) === 'object').map(x => 
@@ -43,9 +43,12 @@ export default function Resume() {
                 </div>
             </div>
 
-            <p className="max-w-[600px] mx-auto">
-                
-            </p>
+            <div id="work" className="max-w-[600px] mx-auto">
+                {work.map(x =>
+                    <div data-work-entry={`${x.job} - ${x.company}`} key={`${x.job} - ${x.company}`}>
+                    </div>
+                )}
+            </div>
         </main>
     );
 }
