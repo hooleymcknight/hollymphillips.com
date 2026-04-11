@@ -1,4 +1,18 @@
 {
+    "Purpose": {
+        "id": "purpose",
+        "imageSrc": "/homepage-icons/purpose.png",
+        "imageAlt": "bullseye target icon",
+        "hoverSrc": "/homepage-icons/purpose-hover.png",
+        "category": "purpose"
+    },
+    "Resume": {
+        "id": "resume",
+        "imageSrc": "/homepage-icons/resume.png",
+        "imageAlt": "icon of a paper with a person waving",
+        "hoverSrc": "/homepage-icons/resume-hover.png",
+        "category": "resume"
+    },
     "Jackbox Wheel": {
         "id": "jackboxWheel",
         "imageSrc": "/homepage-icons/wheel.png",
@@ -76,26 +90,12 @@
         "hoverSrc": "/homepage-icons/anw-hover.png",
         "category": "projects"
     },
-    "Resume": {
-        "id": "resume",
-        "imageSrc": "/homepage-icons/resume.png",
-        "imageAlt": "icon of a paper with a person waving",
-        "hoverSrc": "/homepage-icons/resume-hover.png",
-        "category": "resume"
-    },
     "Reviews": {
         "id": "reviews",
         "imageSrc": "/homepage-icons/reviews.png",
         "imageAlt": "icon of a person with a speech bubble",
         "hoverSrc": "/homepage-icons/reviews-hover.png",
         "category": "reviews"
-    },
-    "Purpose": {
-        "id": "purpose",
-        "imageSrc": "/homepage-icons/purpose.png",
-        "imageAlt": "bullseye target icon",
-        "hoverSrc": "/homepage-icons/purpose-hover.png",
-        "category": "purose"
     },
     "Recommendations": {
         "id": "recommendations",

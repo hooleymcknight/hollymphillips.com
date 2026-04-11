@@ -14,6 +14,7 @@ export default function AppTileGrid(props) {
                         imageAlt={data[x]?.imageAlt || ''}
                         hoverSrc={data[x]?.hoverSrc || ''}
                         name={x}
+                        target={data[x]?.target || null}
                     />
                 )
             }

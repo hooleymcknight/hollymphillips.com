@@ -1,6 +1,4 @@
-const createMarkup = (input) => {
-  return { __html: input}
-}
+import { createMarkup } from "../helpers/helpers";
 
 export default function WorkEntry (props) {
     const entry = props.entry;
@@ -10,7 +8,7 @@ export default function WorkEntry (props) {
             <p><b>{entry.job},</b> {entry.startDate} — {entry.endDate}</p>
             <p>{entry.company}, {entry.location}</p>
 
-            <ul>
+            <ul className="mt-1">
                 {entry.impact.map((x, index) => 
                     typeof(x) === 'string'
                     ?

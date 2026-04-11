@@ -12,10 +12,11 @@ import Link from "next/link";
 export default function AppTile(props) {
     // console.log(typeof(props.link))
     const link = typeof(props.link) == 'string' ? props.link : '#';
-    // console.log('link:', link);
 
     return (
-        <Link href={link} className="app-tile-anchor mx-auto flex flex-col justify-center items-center my-4">
+        <Link href={link} className="app-tile-anchor mx-auto flex flex-col justify-start items-center my-4"
+            target={props.target ? props.target : "_self"}
+        >
             <div className="app-image-container w-[100px] h-[100px] relative">
                 <Image 
                     className="app-image absolute top-0 left-0"
@@ -34,7 +35,7 @@ export default function AppTile(props) {
                     priority
                 />
             </div>
-            <span>{props.name}</span>
+            <span className="text-center">{props.name}</span>
         </Link>
     );
 }

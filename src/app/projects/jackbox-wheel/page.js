@@ -1,17 +1,17 @@
 'use client'
 import { useState, useEffect } from 'react';
 
-import Wheel from '../projects/wheel/wheel';
-import GamesList from '../projects/wheel/gamesList';
-import WheelTitle from '../projects/wheel/wheelTitle';
-import GamesListDesc from '../projects/wheel/gamesListDesc';
+import Wheel from '../../components/projects/wheel/wheel';
+import GamesList from '../../components/projects/wheel/gamesList';
+import WheelTitle from '../../components/projects/wheel/wheelTitle';
+import GamesListDesc from '../../components/projects/wheel/gamesListDesc';
 
-import gamesDataRaw from '../projects/wheel/games_data.json';
-import Filters from '../projects/wheel/filters';
-import BackToWheel from '../projects/wheel/backToWheel';
-import WinnerGame from '../projects/wheel/winnerGame';
+import gamesDataRaw from '../../data/gamesData.json';
+import Filters from '../../components/projects/wheel/filters';
+import BackToWheel from '../../components/projects/wheel/backToWheel';
+import WinnerGame from '../../components/projects/wheel/winnerGame';
 
-import '../styles/wheel.css';
+import '../../styles/wheel.css';
 
 const defaultPlayerCount = 4;
 const minWheelSlices = 6;

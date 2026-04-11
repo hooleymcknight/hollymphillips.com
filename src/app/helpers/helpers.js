@@ -59,3 +59,7 @@ export const getAppTileData = (searchCategory) => {
 
     return thisData;
 }
+
+export const createMarkup = (input) => {
+  return { __html: input}
+}

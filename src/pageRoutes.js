@@ -42,10 +42,10 @@ const pageRoutes = {
         'link': '/purpose',
         'navDisplay': 'Purpose',
     },
-    'caseStudies': {
-        'link': '/case-studies',
-        'navDisplay': 'Case Studies',
-    },
+    // 'caseStudies': {
+    //     'link': '/case-studies',
+    //     'navDisplay': 'Case Studies',
+    // },
     'resume': {
         'link': '/resume',
         'navDisplay': 'Resume',
