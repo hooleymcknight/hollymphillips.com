@@ -1,30 +1,30 @@
 {
     "Katie's Closet": {
         "link": "https://poshmark.com/closet/niftyfinds0707",
-        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageSrc": "/recommendations/katies-closet.png",
         "imageAlt": "placeholder icon",
-        "hoverSrc": "/homepage-icons/dev-project-hover.png",
+        "hoverSrc": "/recommendations/katies-closet-hover.png",
         "target": "_blank"
     },
     "ttv/videovomit": {
         "link": "https://twitch.tv/videovomit",
-        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageSrc": "/recommendations/vvtv-twitch.png",
         "imageAlt": "placeholder icon",
-        "hoverSrc": "/homepage-icons/dev-project-hover.png",
+        "hoverSrc": "/recommendations/vvtv-twitch-hover.png",
         "target": "_blank"
     },
     "Kiva Villegas Art": {
         "link": "https://www.ebay.com/usr/villain_33",
-        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageSrc": "/recommendations/kiva-art.png",
         "imageAlt": "placeholder icon",
-        "hoverSrc": "/homepage-icons/dev-project-hover.png",
+        "hoverSrc": "/recommendations/kiva-art-hover.png",
         "target": "_blank"
     },
     "GeishaMonroe's Fundraiser for Her Father's Dementia Care": {
         "link": "https://gofund.me/c4064a7b1",
-        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageSrc": "/recommendations/geisha.png",
         "imageAlt": "placeholder icon",
-        "hoverSrc": "/homepage-icons/dev-project-hover.png",
+        "hoverSrc": "/recommendations/geisha-hover.png",
         "target": "_blank"
     }
 }

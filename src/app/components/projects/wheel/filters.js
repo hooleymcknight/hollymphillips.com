@@ -148,8 +148,8 @@ const Filters = (props) => {
           </div>
         </div>
 
-        <div className="filter-set open-filter" data-confetti-allowed={props.confettiAllowed}>
-        <label onClick={(e) => toggleDropdown(e)}>Options <FontAwesomeIcon icon={faChevronDown} /></label>
+        {/* <div className="filter-set open-filter" data-confetti-allowed={props.confettiAllowed}>
+          <label onClick={(e) => toggleDropdown(e)}>Options <FontAwesomeIcon icon={faChevronDown} /></label>
           <div className="filter-dropdown">
             <div id="confetti-toggle-container">
               <p>Toggle Confetti</p>
@@ -158,7 +158,7 @@ const Filters = (props) => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
