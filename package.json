@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "pm2start": "pm2 start npm --name 'devsite' -- start"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
