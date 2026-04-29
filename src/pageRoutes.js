@@ -54,9 +54,9 @@ const pageRoutes = {
         'link': '/reviews',
         'navDisplay': 'Reviews',
     },
-    'recommendations': {
-        'link': '/recommendations',
-        'navDisplay': 'Recommendations'
+    'spotlights': {
+        'link': '/spotlights',
+        'navDisplay': 'Spotlights'
     }
 }
 
