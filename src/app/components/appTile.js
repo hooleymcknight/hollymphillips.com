@@ -14,7 +14,7 @@ export default function AppTile(props) {
     const link = typeof(props.link) == 'string' ? props.link : '#';
 
     return (
-        <Link href={link} className="app-tile-anchor mx-auto flex flex-col justify-start items-center my-4"
+        <Link href={link} className="app-tile-anchor mx-auto flex flex-col justify-start items-center my-4 gap-y-4"
             target={props.target ? props.target : "_self"}
         >
             <div className="app-image-container w-[100px] h-[100px] relative">
@@ -35,7 +35,7 @@ export default function AppTile(props) {
                     priority
                 />
             </div>
-            <span className="text-center">{props.name}</span>
+            <span className="text-center leading-tight">{props.name}</span>
         </Link>
     );
 }
