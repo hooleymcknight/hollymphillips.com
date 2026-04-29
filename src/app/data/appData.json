@@ -97,11 +97,11 @@
         "hoverSrc": "/homepage-icons/reviews-hover.png",
         "category": "reviews"
     },
-    "Recommendations": {
-        "id": "recommendations",
+    "Spotlights": {
+        "id": "spotlights",
         "imageSrc": "/homepage-icons/recs.png",
         "imageAlt": "icon of thumbs up and stars",
         "hoverSrc": "/homepage-icons/recs-hover.png",
-        "category": "recommendations"
+        "category": "spotlights"
     }
 }
