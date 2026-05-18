@@ -15,9 +15,7 @@ export default function Home() {
     return (
         <>
             <main className="content-container">
-                <div className="grid grid-cols-4 justify-center font-sans w-full">
-                    <AppTileGrid data={indexData} />
-                </div>
+                <AppTileGrid data={indexData} />
             </main>
         </>
     );

@@ -31,8 +31,8 @@ const jersey15charted = Jersey_15_Charted({
 });
 
 export const metadata = {
-  title: "holly m phillips",
-  description: "developer site",
+  title: "Holly M. Phillips",
+  description: "Developer portfolio site for Holly M. Phillips",
 };
 
 export default async function RootLayout({ children, params }) {
