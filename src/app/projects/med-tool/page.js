@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import domtoimage from 'dom-to-image';
 import '../../styles/medTool.css'
 
-const times = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
-const days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+const times = [...Array(24).keys()];
+const days = Array.from({ length: 11 }, (_, i) => i + 1); // wait, why 11? is this jsut when they all will be looping?
 
 export default function MedTool() {
     const [hoursGap, setHoursGap] = useState(8);
@@ -24,6 +24,7 @@ export default function MedTool() {
 
     const exportToImage = () => {
         const output = document.getElementById('output-section');
+        output.classList.add('exporting');
         domtoimage.toPng(output)
         .then(function (dataUrl) {
             // remove lingering things from the last time
@@ -37,6 +38,7 @@ export default function MedTool() {
             // add new image and download button
             const img = new Image();
             img.src = dataUrl;
+            img.classList.add('export-image');
             document.body.appendChild(img);
 
             const imageTitle = title ? title : 'med-feeding-times-table';
@@ -48,6 +50,7 @@ export default function MedTool() {
             document.body.appendChild(a);
         })
         .then(function() {
+            output.classList.remove('exporting');
             document.getElementById('download-automatically').click();
         })
         .catch(function (error) {
@@ -95,54 +98,87 @@ export default function MedTool() {
     return (
         <main className="max-w-[1000px] mx-auto">
             <div className="med-tool-selectors">
-                <div className="med-selector">
+                <div className="med-selector  my-2">
                     <label htmlFor="hours-gap">Hours Between Doses:</label>
-                    <div>
+                    <div className="flex flex-row items-center gap-2">
                         <input type="range" name="hours-gap" min="3" max="12" onChange={(e) => {setHoursGap(e.target.value)}} defaultValue={hoursGap} />
-                        <span>{hoursGap}</span>
+                        <span className="text-lg">{hoursGap}</span>
                     </div>
                 </div>
-                <div className="med-selector">
+                <div className="med-selector flex flex-row flex-wrap my-2">
                     <label htmlFor="starting-time">Starting Time:</label>
                     <div>
-                        <select name="starting-time" defaultValue={startingTime} onChange={(e) => {setStartingTime(e.target.value)}}>
+                        <select id="starting-time" defaultValue={startingTime}
+                            onChange={(e) => {setStartingTime(e.target.value)}}
+                            className="bg-[#ffffff66] rounded-[4px] border-[1px] mx-2 px-1"
+                        >
                             {times.map(x =>
                             <option key={x} value={x}>{`${x}:00`}</option>
                             )}
                         </select>
                     </div>
                 </div>
-                <div className="med-selector">
+                <div className="med-selector flex flex-row flex-wrap my-2">
                     <label htmlFor="starting-date">Starting Date:</label>
-                    <input type="date" name="starting-date" onChange={(e) => {startingDateHandler(e.target.value)}}></input>
+                    <input type="date" id="starting-date"
+                        onChange={(e) => {startingDateHandler(e.target.value)}}
+                        className="bg-[#ffffff66] rounded-[4px] border-[1px] mx-2 px-1"
+                    />
                 </div>
-                <div className="med-selector">
+                <div className="med-selector flex flex-row flex-wrap my-2">
                     <label htmlFor="title">Title:</label>
-                    <input type="text" name="title" onChange={(e) => {setTitle(e.target.value)}}></input>
+                    <input type="text" id="title"
+                        onChange={(e) => {setTitle(e.target.value)}}
+                        className="bg-[#ffffff66] rounded-[4px] border-[1px] mx-2 px-1"
+                    />
                 </div>
             </div>
 
-            <button onClick={exportToImage}>Export</button>
+            <button className="button button-inverse mt-8" onClick={exportToImage}>Export</button>
 
-            <div id="output-section">
-                {title ? <h2>{title}</h2> : ''}
+            <div id="output-section" className="py-8">
+                {title ? <h2 className="mb-4 mx-2">{title}</h2> : ''}
 
-                <div className="output-times" style={{marginTop: '40px'}}>
+                <div className="output-times flex flex-row flex-wrap">
 
-                    {[...days].slice(0, repeatableDays).map((i) => 
-                        <div key={i} className="day-section">
-                            {startingDate ?
-                            <h3>Day {i} - {`${new Date(new Date(startingDate).setDate(new Date(startingDate).getDate() + (i - 1))).toLocaleDateString('en-US', {month: "numeric", day: "numeric"})}`}</h3>
-                            :
-                            <h3>Day {i}</h3>
-                            }
-                            {times.map(x =>
-                            <div key={x} className="time-slot" data-x={x}
-                                data-active={allHoursToMedicate[`${i}`] ? allHoursToMedicate[`${i}`].includes(x) : "false"}>
-                                {`${x}:00`}
-                            </div>
-                            )}
-                        </div>
+                    {[...days].slice(0, repeatableDays).map((dayNumber) => 
+                        <table key={dayNumber} className={`day-section min-w-[200px] border-[2px] m-2`}>
+                            <tbody>
+                                <tr className="border-b-[2px] border-[var(--foreground)]">
+                                    { startingDate ? 
+                                        <th className="text-left px-2">
+                                            <h3 className="font-bold text-xl">
+                                                Day {dayNumber} - {`${new Date(new Date(startingDate).setDate(new Date(startingDate).getDate() + (dayNumber - 1))).toLocaleDateString('en-US', {month: "numeric", day: "numeric"})}`}
+                                            </h3>
+                                        </th>
+                                    :
+                                        <th className="text-left px-2">
+                                            <h3 className="font-bold text-xl">Day {dayNumber}</h3>
+                                        </th>
+                                    }
+                                </tr>
+                                { times.map(x =>
+                                    <tr key={x} data-x={x}
+                                        data-active={allHoursToMedicate[`${dayNumber}`]?.includes(x) || "false"}
+                                        className={`time-slot
+                                            ${allHoursToMedicate[`${dayNumber}`]?.includes(x) ? 'bg-[var(--foreground)] text-[var(--background)]' : ''}
+                                        `}
+                                    >
+                                        <td className="px-2">
+                                            <span>{`${x}:00`}</span>
+                                        </td>
+                                    </tr>
+                                )}
+                            </tbody>
+                        </table>
+                        // <div key={i} className="day-section min-w-[200px]">
+                        //     {times.map(x =>
+                        //         <div key={x} className="time-slot" data-x={x}
+                        //             data-active={allHoursToMedicate[`${i}`] ? allHoursToMedicate[`${i}`].includes(x) : "false"}>
+                        //             {`${x}:00`}
+                        //         </div>
+                        //     )}
+                        // </div>
                     )}
                 </div>
             </div>

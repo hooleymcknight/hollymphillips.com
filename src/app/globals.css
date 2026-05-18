@@ -3,6 +3,11 @@
 :root {
   --background: #8dad98;
   --foreground: #241f23;
+  --body-padding: 10px;
+  --full-width-padding: calc(2 * var(--body-padding));
+  --full-width-element: calc(100vw - var(--full-width-padding));
+  --video-short-dim: calc(var(--video-wide-dim) * 9 / 16);
+  --video-wide-dim: calc(var(--video-short-dim) * 16 / 9);
 }
 
 @theme inline {
@@ -23,7 +28,7 @@ body {
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-tiny5), var(--font-jersey-25), Arial, Helvetica, sans-serif;
-    padding: 10px 10px;
+    padding: var(--body-padding);
     /* background-image: url('../../public/rainbow1.png'); */
     /* background-size: cover;
     background-repeat: no-repeat; */
@@ -132,7 +137,8 @@ h2 {
 }
 
 .button-inverse {
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    background-color: transparent;
     color: var(--foreground);
 }
 .button-inverse:hover {
@@ -164,4 +170,37 @@ ol {
     height: 100%;
     background-image: url('/dotted.svg');
     background-repeat: repeat;
+}
+
+/* med tool export styling */
+
+#output-section.exporting {
+    padding: 20px !important;
+    overflow: visible !important;
+    width: max-content !important;
+    background-color: var(--background) !important;
+}
+
+#output-section.exporting .output-times {
+    flex-wrap: nowrap;
+    background-color: var(--background) !important;
+    overflow-x: visible !important;
+}
+
+img.export-image {
+    height: 0;
+    visibility: hidden;
+}
+
+/* END OF  med tool export styling */
+
+/* yt video mobile query handler */
+@media (max-width: 800px) {
+    iframe[title*="YouTube video player:"][width="800"] {
+    /* I thought I could just redefine one variable here but alas no... will look for something better when time permits. */
+        --video-wide-dim: var(--full-width-element);
+        --video-short-dim: calc(var(--video-wide-dim) * 9 / 16);
+        width: var(--video-wide-dim);
+        height: var(--video-short-dim);
+    }
 }
