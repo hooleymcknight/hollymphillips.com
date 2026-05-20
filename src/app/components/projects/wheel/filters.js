@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faFilter, faSliders, faXmark } from '@fortawesome/free-solid-svg-icons';
 
-
-
 const Filters = (props) => {
   // const [sliderData, setSliderData] = useState(props.numberOfPlayers);
   const [filtersOpen, setFiltersOpen] = useState(false);
