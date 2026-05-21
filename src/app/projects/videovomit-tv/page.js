@@ -5,13 +5,14 @@ export default function videovomitTv() {
     return (
         <main className="max-w-[1000px] mx-auto">
             <h1 className="text-center">videovomit.tv</h1>
+            <h4 className="text-center">NextJS Website</h4>
 
             <video width="800" height="338" controls autoPlay={true} muted className="mx-auto my-8">
                 <source src="/projects/vvtv/vvtv-coming-soon.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 
-            <p className="max-w-[600px] mx-auto">
+            <p className="max-w-[600px] mx-auto mb-16">
                 Built using NextJS, videovomit.tv is a website for content creator videovomit. This 
                 site is the central location for all of his online content, including an extensive 
                 video archive (hosted on YouTube), videovomit merchandise (sold through Fourth Wall), 

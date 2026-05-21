@@ -30,6 +30,7 @@ const pageRoutes = {
             'caw': '/cro-cli-caw',
             'gtk': '/guess-the-killer',
             'gogcomm': '/gogcomm',
+            'edhrecImporter': '/edhrec-importer',
             'medTool': '/med-tool',
             'tierator': '/tierator',
             'timeConvCalc': '/time-conversion-calculator',

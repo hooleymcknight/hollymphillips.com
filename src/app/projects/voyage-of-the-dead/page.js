@@ -5,6 +5,7 @@ export default function VOTD() {
     return (
         <main className="max-w-[1000px] mx-auto">
             <h1 className="text-center">Voyage of the Dead</h1>
+            <h4 className="text-center">Console Video Game</h4>
 
             <iframe
                 width="800"
@@ -20,7 +21,7 @@ export default function VOTD() {
             </iframe>
             <small className="block max-w-[800px] text-right mx-auto mt-1 mb-8">This video does not belong to me.</small>
 
-            <p className="max-w-[600px] mx-auto">
+            <p className="max-w-[600px] mx-auto mb-16">
                 Voyage of the Dead was my main video game project during my time with Gaming Corps Austin in 2018. 
                 My role was Developer Support / QA Lead. I managed the entire QA process for VOTD. 
                 I also coded the lobby fidgets, the kraken boss fight towards the end of the game, and other various combat encounters. 

@@ -5,13 +5,14 @@ export default function GTK() {
     return (
         <main className="max-w-[1000px] mx-auto">
             <h1 className="text-center">Guess the Killer App</h1>
+            <h4 className="text-center">Electron Desktop App / Twitch Chat Bot</h4>
 
             <video width="800" height="338" controls autoPlay={true} muted loop className="mx-auto my-8">
                 <source src="/projects/gtk/gtk-demo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 
-            <p className="max-w-[600px] mx-auto">
+            <p className="max-w-[600px] mx-auto mb-16">
                 The Guess the Killer app is one of the most time-saving applications I've built for someone. It is estimated to 
                 save anywhere between a cumulative 32 minutes to 1.5 hours per 8-hour stream.
                 <br/><br/>

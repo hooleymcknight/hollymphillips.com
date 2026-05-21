@@ -19,7 +19,7 @@ navContentKeys.forEach((key) => {
 const navButtonHandler = (e) => {
     const dropdown = document.querySelector('#nav-dropdown-btn').nextElementSibling;
     if (dropdown.style.maxHeight == '0px' || dropdown.style.maxHeight == '0') {
-        dropdown.style.maxHeight = '243px';
+        dropdown.style.maxHeight = '248px';
     }
     else {
         dropdown.style.maxHeight = '0px';
@@ -64,10 +64,10 @@ export default function Nav() {
                     style={{ maxHeight: '0px' }}
                 >
                     <ul id="nav-select" defaultValue={pageRoutes.index.link}
-                        className="relative cursor-pointer p-3 border-3 rounded-bl rounded-br rounded-b-md text-lg"
+                        className="relative cursor-pointer p-3 border-3 rounded-bl rounded-br rounded-b-md text-lg z-3"
                         style={{ background: 'var(--background)' }}
                     >
-                        <Grain classes="h-[100%] absolute" style={{ zIndex: '2 !important' }} />
+                        <Grain classes="h-[100%] absolute" />
                         {Object.keys(navContent).map(x => 
                             <li key={camelCaseToDashes(x)} data-x={camelCaseToDashes(x)}>
                                 <Link href={navContent[x].link} onClick={() =>{setTimeout(navButtonHandler, 10)}}>

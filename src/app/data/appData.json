@@ -23,70 +23,77 @@
     "Spooterfi": {
         "id": "spooterfi",
         "imageSrc": "/homepage-icons/spooterfi.png",
-        "imageAlt": "dev project",
+        "imageAlt": "icon of a brain scan",
         "hoverSrc": "/homepage-icons/spooterfi-hover.png",
         "category": "projects"
     },
     "videovomit.tv": {
         "id": "vvtv",
         "imageSrc": "/homepage-icons/vvtv.png",
-        "imageAlt": "dev project",
+        "imageAlt": "icon of stylized text: Video Vomit",
         "hoverSrc": "/homepage-icons/vvtv-hover.png",
         "category": "projects"
     },
     "CRO CLI / CAW": {
         "id": "caw",
         "imageSrc": "/homepage-icons/cro-cli.png",
-        "imageAlt": "dev project",
+        "imageAlt": "icon of a crow",
         "hoverSrc": "/homepage-icons/cro-cli-hover.png",
         "category": "projects"
     },
     "GTK": {
         "id": "gtk",
         "imageSrc": "/homepage-icons/gtk.png",
-        "imageAlt": "dev project",
+        "imageAlt": "icon with rhombus and a hook inside",
         "hoverSrc": "/homepage-icons/gtk-hover.png",
         "category": "projects"
     },
     "GoG Comm": {
         "id": "gogcomm",
         "imageSrc": "/homepage-icons/gogcomm.png",
-        "imageAlt": "dev project",
+        "imageAlt": "icon of an atom-like design with rings and dots placed on points around the rings",
         "hoverSrc": "/homepage-icons/gogcomm-hover.png",
+        "category": "projects"
+    },
+    "EDHREC Importer": {
+        "id": "edhrecImporter",
+        "imageSrc": "/homepage-icons/dev-project.png",
+        "imageAlt": "dev project",
+        "hoverSrc": "/homepage-icons/dev-project-hover.png",
         "category": "projects"
     },
     "Med Tool": {
         "id": "medTool",
         "imageSrc": "/homepage-icons/med-tool.png",
-        "imageAlt": "dev project",
+        "imageAlt": "clock icon with two medicine capsules in front",
         "hoverSrc": "/homepage-icons/med-tool-hover.png",
         "category": "projects"
     },
     "Tierator": {
         "id": "tierator",
         "imageSrc": "/homepage-icons/tierator.png",
-        "imageAlt": "dev project",
+        "imageAlt": "circle icon with three offset horizontal bars",
         "hoverSrc": "/homepage-icons/tierator-hover.png",
         "category": "projects"
     },
     "Time Conversion Calculator": {
         "id": "timeConvCalc",
         "imageSrc": "/homepage-icons/time-conversion-calc.png",
-        "imageAlt": "dev project",
+        "imageAlt": "globe icon with clock icon in front of it",
         "hoverSrc": "/homepage-icons/time-conversion-calc-hover.png",
         "category": "projects"
     },
     "Voyage of the Dead": {
         "id": "votd",
         "imageSrc": "/homepage-icons/votd.png",
-        "imageAlt": "dev project",
+        "imageAlt": "outlined version of the official Voyage of the Dead(TM) icon",
         "hoverSrc": "/homepage-icons/votd-hover.png",
         "category": "projects"
     },
     "American Ninja Warrior Challenge": {
         "id": "anw",
         "imageSrc": "/homepage-icons/anw.png",
-        "imageAlt": "dev project",
+        "imageAlt": "outlined version of the official American Ninja Warrior Challenge icon",
         "hoverSrc": "/homepage-icons/anw-hover.png",
         "category": "projects"
     },
