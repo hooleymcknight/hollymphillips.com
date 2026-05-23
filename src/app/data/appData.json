@@ -57,9 +57,9 @@
     },
     "EDHREC Importer": {
         "id": "edhrecImporter",
-        "imageSrc": "/homepage-icons/dev-project.png",
-        "imageAlt": "dev project",
-        "hoverSrc": "/homepage-icons/dev-project-hover.png",
+        "imageSrc": "/homepage-icons/edhrec.png",
+        "imageAlt": "Mozilla's add-on icon with an import icon over it",
+        "hoverSrc": "/homepage-icons/edhrec-hover.png",
         "category": "projects"
     },
     "Med Tool": {
