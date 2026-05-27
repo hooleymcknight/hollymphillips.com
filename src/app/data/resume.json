@@ -11,22 +11,38 @@
         "cell": {
             "href": "tel:+19364251225",
             "alt": "phone number: 936-425-1225",
-            "text": "(936) 425-1225"
+            "text": "(936) 425-1225",
+            "export": {
+                "text": "(936) 425-1225",
+                "href": "tel:+19364251225"
+            }
         },
         "email": {
             "href": "mailto:hollymphillips.dev@gmail.com?subject=Hello Holly!&body=I'd love to connect with you...",
             "alt": "email address: hollymphillips.dev@gmail.com",
-            "text": "hollymphillips.dev@gmail.com"
+            "text": "hollymphillips.dev@gmail.com",
+            "export": {
+                "text": "hollymphillips.dev@gmail.com",
+                "href": "mailto:hollymphillips.dev@gmail.com?subject=Hello Holly!&body=I'd love to connect with you..."
+            }
         },
         "linkedin": {
             "href": "https://www.linkedin.com/in/hooleymcknight/",
             "alt": "linkedin profile",
-            "text": "LinkedIn Profile"
+            "text": "linkedin.com/in/hooleymcknight",
+            "export": {
+                "text": "linkedin.com/in/hooleymcknight",
+                "href": "https://linkedin.com/in/hooleymcknight"
+            }
         },
         "github": {
             "href": "https://www.github.com/hooleymcknight/",
             "alt": "github profile",
-            "text": "GitHub Profile"
+            "text": "github.com/hooleymcknight",
+            "export": {
+                "text": "github.com/hooleymcknight",
+                "href": "https://github.com/hooleymcknight"
+            }
         }
     },
     "Work Experience": [
@@ -137,35 +153,38 @@
         }
     ],
     "Skills": {
-        "JavaScript": [
-            "NodeJS", "ReactJS", "jQuery", "NextJS", "ExpressJS", "React Native", "Typescript", "VueJS"
+        "Languages": [
+            "Typescript", "React", "Next.js", "Node.js", "Express.js", "Vue.js", "Python", "PHP"
+        ],
+        "Platforms": [
+            "React\u00A0Native", "Electron", "Browser extensions (Chrome, Firefox)"
         ],
         "Front-end": [
-            "HTML", "CSS", "Sass", "REST API", "AJAX", "Tailwind CSS", "WCAG", "Gulp"
+            "HTML", "CSS", "Sass", "Tailwind\u00A0CSS", "WCAG"
         ],
         "CMS": [
-            "Salesforce", "WordPress", "Shopify Liquid", "Shopify 2.0", "Shopify App Development", "Shopify Checkout UI Extensions", "Recharge", "Contentful", "Magento"
+            "Shopify (Liquid, 2.0, App Development, Checkout UI Extensions)", "Salesforce Marketing Cloud", "WordPress", "HubSpot", "Contentful", "Magento", "Recharge"
         ],
         "Database": [
-            "MySQL", "Prisma", "NoSQL", "MongoDB", "Oracle SQL", "PostgreSQL", "MariaDB"
+            "MySQL", "Prisma", "PostgreSQL", "MongoDB", "MariaDB"
         ],
-        "CRO": [
-            "GA4", "Convert", "Dynamic Yield", "Optimizely", "VWO", "AB Tasty", "Monetate", "Adobe Target"
+        "Experimentation": [
+            "GA4", "Convert", "Dynamic\u00A0Yield", "Optimizely", "VWO", "AB\u00A0Tasty", "Monetate", "Adobe\u00A0Target"
         ],
-        "VCS": [
-            "Git", "GitHub", "Bitbucket"
+        "Tools": [
+            "Git", "JIRA", "ClickUp", "Windows", "macOS", "Linux (Ubuntu, Zorin)"
         ],
         "Infrastructure": [
-            "Amazon Web Services (AWS)", "Jenkins", "Docker"
+            "Nginx", "Apache", "Amazon Web Services (AWS)"
         ],
-        "Other": [
-            "JWTs", "GraphQL", "Nginx", "Python", "C#", "C++", "Java", "PHP", "Apache", "Jest", "Cypress", "G Suite", "Microsoft Office", "Windows 10", "Linux", "Mac", "Asana", "Trello", "ClickUp", "JIRA", "Monday", "Basecamp", "Airtable", "NPM"
+        "Backend": [
+            "JWTs", "GraphQL"
         ]
     },
     "Education & Certifications": [
         "<b>Bachelor of Science</b> in Mathematics, <b>University of North Texas,</b> 2015",
         "<b>Associate of Applied Science</b> in Air Traffic Control, <b>Texas State Technical College,</b> 2017",
-        "<b>W3schools Certified JavaScript Developer,</b> 2019 (<a href='https://certification.w3schools.com/w3certified.asp?id=10936182' target='_blank' alt='W3schools JS certification'>online link</a>)",
+        "<b>W3schools Certified JavaScript Developer,</b> 2019",
         "<b>AB Tasty User (Essentials),</b> 2022"
     ]
 }
