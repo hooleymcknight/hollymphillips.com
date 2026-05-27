@@ -1,39 +1,42 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { jsPDF } from "jspdf";
 import { createMarkup } from "../helpers/helpers";
+import { exportPDF } from "../helpers/exportPDF";
 
-import { ref, 'Contact Info' as contacts } from '@/app/data/resume.json';
-import { 'Work Experience' as work, 'Skills' as skills, 'Education & Certifications' as education } from '@/app/data/resume.json';
+import resumeData from '@/app/data/resume.json';
+
+const ref = resumeData.ref;
+const contacts = resumeData['Contact Info'];
+const work = resumeData['Work Experience'];
+const skills = resumeData['Skills'];
+const education = resumeData['Education & Certifications'];
+
+
 import WorkEntry from "../components/workEntry";
 import SkillSection from "../components/skills";
 
 export default function Resume() {
 
-    const exportPDF = () => {
-        const doc = new jsPDF();
-        // doc.text("Hello world!", 10, 10);
-        // doc.save("a4.pdf");
-        doc.text(document.querySelector('#resume-content').textContent, 10, 10);
-        doc.save('resume2.pdf');
-    }
-
     return (
         <main className="max-w-[1000px] mx-auto">
             <h1 className="text-center">Resume</h1>
 
-            <Link href={ref.downloadHref} download
+            {/* <Link href={ref.downloadHref} download
                 alt="a circular logo of a fictitious coffee shop"
                 className="button mx-auto block w-fit my-3"
                 style={{ paddingTop: '4px', paddingBottom: '4px', }}
             >
                 Download
-            </Link>
+            </Link> */}
 
-            {/* <button onClick={exportPDF}>
-                pdf
-            </button> */}
+            <button
+                className="button mx-auto block w-fit my-3"
+                style={{ paddingTop: '4px', paddingBottom: '4px', }}
+                onClick={exportPDF}
+            >
+                Download PDF
+            </button>
 
             <div id="resume-content">
                 <div id="intro-section" className="flex flex-row flex-row-reverse mx-auto my-8 max-w-[600px] gap-8">
