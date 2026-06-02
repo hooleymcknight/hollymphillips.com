@@ -22,14 +22,6 @@ export default function Resume() {
         <main className="max-w-[1000px] mx-auto">
             <h1 className="text-center">Resume</h1>
 
-            {/* <Link href={ref.downloadHref} download
-                alt="a circular logo of a fictitious coffee shop"
-                className="button mx-auto block w-fit my-3"
-                style={{ paddingTop: '4px', paddingBottom: '4px', }}
-            >
-                Download
-            </Link> */}
-
             <button
                 className="button mx-auto block w-fit my-3"
                 style={{ paddingTop: '4px', paddingBottom: '4px', }}
