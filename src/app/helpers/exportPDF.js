@@ -31,8 +31,8 @@ export const exportPDF = () => {
         return tmp.textContent || tmp.innerText || '';
     };
 
-    // Write wrapped text starting at (x, y), advance y by the block's height.
-    // splitTextToSize is the function that makes word-wrapping in jsPDF tolerable.
+    // write wrapped text starting at (x, y), up y by block's height
+    // splitTextToSize is what makes word-wrapping not dogshit
     const write = (text, x = margin, { size = 10, weight = 'normal', url = null } = {}) => {
         doc.setFont('helvetica', weight);
         doc.setFontSize(size);
@@ -41,9 +41,10 @@ export const exportPDF = () => {
         ensureSpace(lines.length * lineHeight);
 
         if (url) {
-            // Optional: visually mark it as a link
+            // change color so ppl know it's a link
             doc.setTextColor(40, 80, 200);
-            // textWithLink only reliably handles a single line, so render line-by-line
+            // textWithLink sucks at multiline, so render line-by-line (line by line (line by line))
+            // someday someone will appreciate my jp saxe reference
             lines.forEach((line, i) => {
                 doc.textWithLink(line, x, y + size + (i * lineHeight), { url });
             });
