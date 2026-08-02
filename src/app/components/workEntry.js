@@ -8,7 +8,7 @@ export default function WorkEntry (props) {
             <p><b>{entry.job},</b> {entry.startDate} — {entry.endDate}</p>
             <p>{entry.company}, {entry.location}</p>
 
-            <ul className="mt-1">
+            <ul className="mt-1 ml-8">
                 {entry.impact.map((x, index) => 
                     typeof(x) === 'string'
                     ?
