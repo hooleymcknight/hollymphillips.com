@@ -64,7 +64,7 @@ export default function Nav() {
                     style={{ maxHeight: '0px' }}
                 >
                     <ul id="nav-select" defaultValue={pageRoutes.index.link}
-                        className="relative cursor-pointer p-3 border-3 rounded-bl rounded-br rounded-b-md text-lg z-3"
+                        className="relative cursor-pointer p-3 border-3 rounded-bl rounded-br rounded-b-md text-lg z-3 !list-none"
                         style={{ background: 'var(--background)' }}
                     >
                         <Grain classes="h-[100%] absolute" />

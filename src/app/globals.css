@@ -115,6 +115,21 @@ h2 {
     display: block;
 }
 
+#intro-section { margin-bottom: 10px; }
+#intro-section + .lined {
+    display: block;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 415px) {
+    #intro-section {
+        flex-direction: column-reverse;
+        gap: 20px;
+        width: min-content;
+        margin-bottom: 0;
+    }
+}
+
 /* button */
 
 .button {

@@ -54,6 +54,8 @@ export default function Resume() {
                     </div>
                 </div>
 
+                <div className="lined max-w-[600px] mx-auto"><span className="w-full">&nbsp;</span></div>
+
                 <div id="skills" className="max-w-[600px] mx-auto mb-8">
                     <h2 className="mb-2">Skills</h2>
                     <SkillSection data={skills} />
