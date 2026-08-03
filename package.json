@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "pm2 delete all && pm2 start npm --name 'hollyngrade.com' -- start",
-    "fulldeploy": "git fetch && git pull origin main && pm2 delete all && npm run build && pm2 start npm --name 'hollyngrade.com' -- start",
+    "deploy": "pm2 delete all && pm2 start npm --name 'hollymphillips.com' -- start",
+    "fulldeploy": "git fetch && git pull origin main && pm2 delete all && npm run build && pm2 start npm --name 'hollymphillips.com' -- start",
     "order": "echo 'fetch, pull, pm2 delete, run build, pm2 start'",
-    "pm2start": "pm2 start npm --name 'hollyngrade.com' -- start"
+    "pm2start": "pm2 start npm --name 'hollymphillips.com' -- start"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
