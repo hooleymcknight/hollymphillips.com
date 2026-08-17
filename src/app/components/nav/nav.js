@@ -1,4 +1,5 @@
 'use client';
+import { useState, useEffect } from 'react';
 import pageRoutes from "@/pageRoutes";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
@@ -16,17 +17,11 @@ navContentKeys.forEach((key) => {
     };
 });
 
-const navButtonHandler = (e) => {
-    const dropdown = document.querySelector('#nav-dropdown-btn').nextElementSibling;
-    if (dropdown.style.maxHeight == '0px' || dropdown.style.maxHeight == '0') {
-        dropdown.style.maxHeight = '248px';
-    }
-    else {
-        dropdown.style.maxHeight = '0px';
-    }
-}
+
 
 export default function Nav() {
+    const [isOpen, setIsOpen] = useState(false);
+
     const pathname = usePathname();
     const pathIndex = Object.values(navContent).map(x => x.link).indexOf(pathname);
     let currentPageName = Object.values(navContent)[pathIndex]?.navDisplay || 'All'; // "all" is fallback
@@ -43,34 +38,38 @@ export default function Nav() {
         currentPageName = parentObj.length ? parentObj[0].navDisplay : currentPageName;
     }
 
+    useEffect(() => {
+        setIsOpen(false);
+    }, [pathname]);
+
     return (
-        <nav className="flex m-3 w-[calc(100% - calc(var(--spacing) * 3))] justify-between border-b-3 border-current mt-0">
+        <nav className="flex m-3 justify-between border-b-3 border-current mt-0">
             <Link href={pageRoutes.index.link}
-                className="invert-colors rounded-t-[3px] px-3 py-0.1 text-xl flex items-center"
+                className="invert-colors rounded-t-[3px] px-3 text-xl flex items-center"
             >
-                Holly M. Phillips
+                Home
             </Link>
             <div className="nav-list relative">
                 <button
                     id="nav-dropdown-btn"
-                    onClick={(e) => navButtonHandler(e)}
+                    onClick={() => {setIsOpen(!isOpen)}}
                     className="w-auto text-right py-[4px] pr-[16px] pl-[40px] text-xl"
-                    aria-roledescription="open the dropdown for the navigation"
+                    aria-expanded={isOpen}
                 >
-                    <span>{currentPageName}</span>
+                    <span><span className="sr-only">Filter: </span>{currentPageName}</span>
                 </button>
                 <div id="select-dropdown"
                     className="absolute w-[200px] text-right top-full right-0 overflow-hidden z-2"
-                    style={{ maxHeight: '0px' }}
+                    style={{ maxHeight: `${isOpen ? '248px' : '0px'}`, background: 'var(--background)' }}
+                    inert={isOpen ? null : true}
                 >
-                    <ul id="nav-select" defaultValue={pageRoutes.index.link}
+                    <Grain classes="h-[100%] absolute" />
+                    <ul id="nav-select"
                         className="relative cursor-pointer p-3 border-3 rounded-bl rounded-br rounded-b-md text-lg z-3 !list-none"
-                        style={{ background: 'var(--background)' }}
                     >
-                        <Grain classes="h-[100%] absolute" />
                         {Object.keys(navContent).map(x => 
                             <li key={camelCaseToDashes(x)} data-x={camelCaseToDashes(x)}>
-                                <Link href={navContent[x].link} onClick={() =>{setTimeout(navButtonHandler, 10)}}>
+                                <Link href={navContent[x].link}>
                                     {navContent[x].navDisplay}
                                 </Link>
                             </li>

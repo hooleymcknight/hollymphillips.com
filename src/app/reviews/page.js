@@ -8,7 +8,7 @@ export default function Reviews() {
 
     return (
         <main className="max-w-[1000px] mx-auto relative">
-            <h1 className="text-center">Reviews</h1>
+            <h1 className="text-center">{ !activeReview.name ? 'Reviews' : `Review from ${activeReview.name}`}</h1>
             {
                 !activeReview ? 
                     <ol>
