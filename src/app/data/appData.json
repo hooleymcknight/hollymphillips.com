@@ -27,6 +27,13 @@
         "hoverSrc": "/homepage-icons/spooterfi-hover.png",
         "category": "projects"
     },
+    "StarCat Karaoke": {
+        "id": "starcatKaraoke",
+        "imageSrc": "/homepage-icons/starcat-karaoke.png",
+        "imageAlt": "cat in front of a star",
+        "hoverSrc": "/homepage-icons/starcat-karaoke-hover.png",
+        "category": "projects"
+    },
     "videovomit.tv": {
         "id": "vvtv",
         "imageSrc": "/homepage-icons/vvtv.png",

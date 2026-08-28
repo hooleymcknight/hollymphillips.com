@@ -26,6 +26,7 @@ const pageRoutes = {
         'sublinks': {
             'jackboxWheel': '/jackbox-wheel',
             'spooterfi': '/spooterfi',
+            'starcatKaraoke': '/starcat-karaoke',
             'vvtv': '/videovomit-tv',
             'caw': '/cro-cli-caw',
             'gtk': '/guess-the-killer',
