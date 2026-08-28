@@ -1,5 +1,7 @@
 'use client'
 
+import StatusBadge from "@/app/components/projects/statusBadge";
+
 export default function Tierator() {
 
     return (
@@ -13,7 +15,9 @@ export default function Tierator() {
                 alt="gif of the Tierator site, moving and adding entries"
             />
 
-            <p className="max-w-[600px] mx-auto mb-16">
+            <StatusBadge status="Archived" notes="" />
+
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
                 Tierator was a website that enabled users to create a tier table (as shown above) 
                 with easy-to-use drag and drop features and image export capabilities. This site was 
                 built using VueJS.

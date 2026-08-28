@@ -1,5 +1,7 @@
 'use client'
 
+import StatusBadge from "@/app/components/projects/statusBadge";
+
 export default function VOTD() {
 
     return (
@@ -21,7 +23,9 @@ export default function VOTD() {
             </iframe>
             <small className="block max-w-[800px] text-right mx-auto mt-1 mb-8">This video does not belong to me.</small>
 
-            <p className="max-w-[600px] mx-auto mb-16">
+            <StatusBadge status="Complete" notes="released 2019" />
+
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
                 Voyage of the Dead was my main video game project during my time with Gaming Corps Austin in 2018. 
                 My role was Developer Support / QA Lead. I managed the entire QA process for VOTD. 
                 I also coded the lobby fidgets, the kraken boss fight towards the end of the game, and other various combat encounters. 

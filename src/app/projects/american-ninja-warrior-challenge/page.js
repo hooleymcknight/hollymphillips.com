@@ -1,5 +1,7 @@
 'use client'
 
+import StatusBadge from "@/app/components/projects/statusBadge";
+
 export default function ANW() {
 
     return (
@@ -21,7 +23,9 @@ export default function ANW() {
             </iframe>
             <small className="block max-w-[800px] text-right mx-auto mt-1 mb-8">This video does not belong to me.</small>
 
-            <p className="max-w-[600px] mx-auto mb-16">
+            <StatusBadge status="Complete" notes="released 2019" />
+
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
                 American Ninja Warrior Challenge was one of the two video games I worked on with Gaming Corps Austin in 2018. 
                 My role was Developer Support / QA Lead; most of my work on ANW was QA-related. I also assisted with set decorations. 
                 This game was coded with C# in Unity.

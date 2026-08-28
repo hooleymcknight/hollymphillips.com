@@ -1,5 +1,7 @@
 'use client'
 
+import StatusBadge from "@/app/components/projects/statusBadge";
+
 export default function Spooterfi() {
 
     return (
@@ -12,7 +14,9 @@ export default function Spooterfi() {
                 Your browser does not support the video tag.
             </video>
 
-            <p className="max-w-[600px] mx-auto mb-16">
+            <StatusBadge status="Active" notes="rewriting in Tauri" />
+
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
                 Spooterfi was custom-built for a friend after a community project broke and wasn't repaired. 
                 This app connects with the user's Spotify account, pulls the Now Playing data, and inserts that 
                 information into a local .txt file for the user to display on their Twitch stream through OBS. 

@@ -1,5 +1,7 @@
 'use client'
 
+import StatusBadge from "@/app/components/projects/statusBadge";
+
 export default function videovomitTv() {
 
     return (
@@ -12,7 +14,9 @@ export default function videovomitTv() {
                 Your browser does not support the video tag.
             </video>
 
-            <p className="max-w-[600px] mx-auto mb-16">
+            <StatusBadge status="Active" notes="" />
+
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
                 Built using NextJS, videovomit.tv is a website for content creator videovomit. This 
                 site is the central location for all of his online content, including an extensive 
                 video archive (hosted on YouTube), videovomit merchandise (sold through Fourth Wall), 

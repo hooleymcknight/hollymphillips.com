@@ -1,5 +1,7 @@
 'use client'
 
+import StatusBadge from "@/app/components/projects/statusBadge";
+
 export default function EDHREC() {
 
     return (
@@ -12,7 +14,9 @@ export default function EDHREC() {
                 Your browser does not support the video tag.
             </video>
 
-            <div className="max-w-[600px] mx-auto mb-16">
+            <StatusBadge status="Complete" notes="" />
+
+            <div className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
                 <p>
                     Quickly import a list of MTG cards into your EDHREC clipboard instead of looking them up one at a time. 
                     Paste a deck list, click submit, and the cards appear in your EDHREC clipboard ready for recommendations.

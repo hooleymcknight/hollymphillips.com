@@ -1,5 +1,7 @@
 'use client'
 
+import StatusBadge from "@/app/components/projects/statusBadge";
+
 export default function GTK() {
 
     return (
@@ -12,7 +14,9 @@ export default function GTK() {
                 Your browser does not support the video tag.
             </video>
 
-            <p className="max-w-[600px] mx-auto mb-16">
+            <StatusBadge status="Active" notes="evaluating frameworks for a rebuild" />
+
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
                 The Guess the Killer app is one of the most time-saving applications I've built for someone. It is estimated to 
                 save anywhere between a cumulative 32 minutes to 1.5 hours per 8-hour stream.
                 <br/><br/>

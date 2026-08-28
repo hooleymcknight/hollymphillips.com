@@ -1,5 +1,7 @@
 'use client'
 
+import StatusBadge from "@/app/components/projects/statusBadge";
+
 export default function CAW() {
 
     return (
@@ -13,7 +15,9 @@ export default function CAW() {
                 alt="gif of the CRO CLI tool in action, generating files for an A/B test"
             />
 
-            <p className="max-w-[600px] mx-auto mb-16">
+            <StatusBadge status="Archived" notes="CLI complete, CAW app retired" />
+
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
                 After working in CRO for several years, I decided to build my own CRO tools for personal and contract use. 
                 The first tool I built was a command line interface tool that quickly generates code templates based on the 
                 client's information and the number of variations in the test.
