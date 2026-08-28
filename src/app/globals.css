@@ -248,7 +248,7 @@ ol ol, ul ol {
 /** attempting to create the silver border **/
 
 .pv-frame {
-    height: 100vh;
+    height: 100svh;
     padding: var(--top-edge) var(--side-edge) var(--bottom-edge);
     overflow: hidden;
     background:
