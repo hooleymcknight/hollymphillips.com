@@ -119,7 +119,8 @@ export const exportPDF = () => {
         const titleLine = entry.company ? `${entry.job} — ${entry.company}` : entry.job;
         write(titleLine, margin, { size: 11, weight: 'bold' });
 
-        const meta = [entry.dates, entry.location].filter(Boolean).join('  •  ');
+        const dates = [entry.startDate, entry.endDate].filter(Boolean).join(' – ');
+        const meta = [dates, entry.location].filter(Boolean).join('  •  ');
         if (meta) write(meta, margin, { size: 9 });
 
         const bullets = entry.impact;
