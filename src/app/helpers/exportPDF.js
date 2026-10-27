@@ -75,30 +75,38 @@ export const exportPDF = () => {
     doc.text(contacts.name, margin, y + 20);
     y += 32; // was 28
 
-    // ===== Contact line =====
-    const contactItems = Object.keys(contacts)
-        .filter(k => typeof contacts[k] === 'object' && contacts[k]?.text);
+    // ===== Contact lines =====
+    const SITE = { text: 'hollymphillips.com', url: 'https://hollymphillips.com' };
 
-    let cx = margin;
-    contactItems.forEach((k, i) => {
-        const item = contacts[k];
-        const text = item.export?.text ?? item.text;
-        const url = item.export?.href ?? item.href;
+    const fromContacts = (k) => ({
+        text: contacts[k].export?.text ?? contacts[k].text,
+        url: contacts[k].export?.href ?? contacts[k].href,
+    });
 
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(10);
+    const contactRows = [
+        [fromContacts('cell'), fromContacts('email'), SITE],
+        [fromContacts('linkedin'), fromContacts('github')],
+    ];
 
-        if (i > 0) {
-            doc.text('  •  ', cx, y + 10);
-            cx += doc.getTextWidth('  •  ');
-        }
+    contactRows.forEach(row => {
+        let cx = margin;
+        row.forEach((item, i) => {
+            doc.setFont('helvetica', 'normal');
+            doc.setFontSize(10);
 
-        doc.setTextColor(40, 80, 200);
-        doc.textWithLink(text, cx, y + 10, { url });
-        cx += doc.getTextWidth(text);
+            if (i > 0) {
+                doc.setTextColor(0, 0, 0);
+                doc.text('  •  ', cx, y + 10);
+                cx += doc.getTextWidth('  •  ');
+            }
+
+            doc.setTextColor(40, 80, 200);
+            doc.textWithLink(item.text, cx, y + 10, { url: item.url });
+            cx += doc.getTextWidth(item.text);
+        });
+        y += 12 * 1.35; /* was 10 * 1.35 */
     });
     doc.setTextColor(0, 0, 0);
-    y += 12 * 1.35; /* was 10 * 1.35 */
 
     // ===== Skills =====
     heading('Skills');
@@ -154,7 +162,7 @@ export const exportPDF = () => {
         y += 4;
     });
 
-    doc.save('resume.pdf');
+    doc.save('HollyMPhillips_Resume.pdf');
 };
 
 /** for underlining */
