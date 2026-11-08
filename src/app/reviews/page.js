@@ -11,14 +11,14 @@ export default function Reviews() {
             <h1 className="text-center">{ !activeReview.name ? 'Reviews' : `Review from ${activeReview.name}`}</h1>
             {
                 !activeReview ? 
-                    <ol>
+                    <ol className='font-[family-name:var(--font-cabin)]!'>
                         {reviews.map(x =>
                             <li key={x.name}>
                                 <button
                                     className="px-2 appearance-none block w-full text-left mb-4 hover:bg-[var(--foreground)] hover:text-[var(--background)]"
                                     onClick={() => { setActiveReview(x) }}
                                 >
-                                    <p>{x.name}</p>
+                                    <p className="font-bold">{x.name}</p>
                                     <span
                                         className="overflow-hidden max-h-[1lh] block text-ellipsis whitespace-nowrap"
                                         dangerouslySetInnerHTML={createMarkup(x.content)}
@@ -33,7 +33,7 @@ export default function Reviews() {
                 <> 
                     <div className="lined">
                         <span
-                            className=""
+                            className="font-[family-name:var(--font-cabin)]!"
                             dangerouslySetInnerHTML={createMarkup(activeReview.content)}
                         >
                         </span>

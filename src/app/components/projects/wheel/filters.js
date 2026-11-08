@@ -80,10 +80,12 @@ const Filters = (props) => {
         type="button" id="open-filters"
         aria-roledescription="open the filter tray"
         onClick={(e) => toggleFilterTray(e)}
+        style={{ display: 'none' }}
       >
         <FontAwesomeIcon icon={faSliders} />
         Filters &amp; Options
       </button>
+
       <div className={props.className} data-open={filtersOpen}>
         <div className="filters-top-bar">
           <h1>Filters & Options</h1>

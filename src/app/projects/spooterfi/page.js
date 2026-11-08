@@ -16,7 +16,7 @@ export default function Spooterfi() {
 
             <StatusBadge status="Active" notes="rewriting in Tauri" />
 
-            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16 font-[family-name:var(--font-cabin)]!">
                 Spooterfi was custom-built for a friend after a community project broke and wasn't repaired. 
                 This app connects with the user's Spotify account, pulls the Now Playing data, and inserts that 
                 information into a local .txt file for the user to display on their Twitch stream through OBS. 

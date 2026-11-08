@@ -31,13 +31,13 @@ export default function Resume() {
             </button>
 
             <div id="resume-content">
-                <div id="intro-section" className="flex flex-row flex-row-reverse mx-auto my-8 max-w-[600px] gap-8">
+                <div id="intro-section" className="flex flex-row flex-row-reverse mx-auto my-8 max-w-[500px] gap-8">
                     <div className="grow-[0.75] flex flex-col">
                         <h2>{contacts.name}</h2>
                         {
                             Object.keys(contacts).filter(x => typeof(contacts[x]) === 'object').map(x => 
                                 <Link key={contacts[x].text}
-                                    className="hover:underline"
+                                    className="underline decoration-dotted hover:decoration-solid underline-offset-4 font-[family-name:var(--font-cabin)]!"
                                     href={contacts[x].href}
                                     alt={contacts[x].alt}
                                     target="_blank"
@@ -76,7 +76,7 @@ export default function Resume() {
                 <div id="education" className="max-w-[600px] mx-auto mb-8">
                     <h2 className="mb-2">Education & Certifications</h2>
                     {education.map((x, index) =>
-                        <p key={index} dangerouslySetInnerHTML={createMarkup(x)}></p>
+                        <p key={index} className="font-[family-name:var(--font-cabin)]!" dangerouslySetInnerHTML={createMarkup(x)}></p>
                     )}
                 </div>
             </div>

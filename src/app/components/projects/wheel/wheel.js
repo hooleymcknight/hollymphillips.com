@@ -74,7 +74,7 @@ const Wheel = (props) => {
                             height: `${x.sliceHeight}px`
                         }}
                     >
-                        <span className="game-title">{x.title}</span>
+                        <span className="game-title font-[family-name:var(--font-cabin)]!">{x.title}</span>
                     </div>
                 )}
             </div>

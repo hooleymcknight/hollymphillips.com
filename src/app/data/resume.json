@@ -47,7 +47,7 @@
     "Work Experience": [
         {
             "job": "Development Lead, Technology",
-            "company": "Fusion 92",
+            "company": "Fusion92",
             "location": "Tacoma, Washington",
             "startDate": "February 2025",
             "endDate": "October 2026",
@@ -60,7 +60,7 @@
         },
         {
             "job": "Front End Developer",
-            "company": "Fusion 92",
+            "company": "Fusion92",
             "location": "Tacoma, Washington",
             "startDate": "September 2023",
             "endDate": "February 2025",
@@ -72,7 +72,7 @@
         },
         {
             "job": "Freelance Developer",
-            "company": "Fusion 92",
+            "company": "Fusion92",
             "location": "Tacoma, Washington",
             "startDate": "June 2023",
             "endDate": "September 2023",
@@ -153,7 +153,7 @@
     ],
     "Skills": {
         "Languages": [
-            "Typescript", "React", "Next.js", "Node.js", "Express.js", "Vue.js", "Python", "PHP"
+            "TypeScript", "React", "Next.js", "Node.js", "Express.js", "Vue.js", "Python", "PHP"
         ],
         "Platforms": [
             "React\u00A0Native", "Electron", "Browser extensions (Chrome, Firefox)"

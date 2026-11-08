@@ -17,14 +17,21 @@
 .time-calc form[id=time-conversion] [class=form-section] {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 30px;
     margin: 18px 10px;
 }
 
-.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper], .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] {
+.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper],
+.time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] {
     position: relative;
     width: fit-content;
     width: -moz-fit-content;
     margin-top: 24px;
+    /* margin-right: 25px; */
+}
+.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper]:first-child,
+.time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper]:first-child {
     margin-right: 25px;
 }
 
@@ -34,44 +41,54 @@
     font-size: 16px;
     color: var(--foreground);
     font-weight: 700;
+    text-wrap: nowrap;
 }
 
-.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] select, .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] select {
+.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] select,
+.time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] select {
     padding: 5px 30px 4px 8px;
     appearance: auto;
     border: 2px solid var(--foreground);
     font-size: 18px;
+    font-family: var(--font-cabin);
 }
 
-.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] select:focus-visible, .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] select:focus-visible {
+.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] select:focus-visible,
+.time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] select:focus-visible {
     outline-offset: 3px;
 }
 
 @media (max-width: 450px) {
-    .time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] select, .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] select {
+    .time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] select,
+    .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] select {
         padding-right: 20px;
     }
 }
 
-.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] input, .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] input {
+.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] input,
+.time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] input {
     border: 2px solid var(--foreground);
     padding: 7px 8px;
     font-size: 18px;
+    font-family: var(--font-cabin);
 }
 
 @media (max-width: 450px) {
-    .time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] input, .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] input {
+    .time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper] input,
+    .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper] input {
         max-width: 100px;
     }
 }
 
-.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper][offset-wrapper], .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper][offset-wrapper] {
-    width: 260px;
+.time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper][offset-wrapper],
+.time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper][offset-wrapper] {
+    width: auto;
 }
 
 @media (max-width: 540px) {
-    .time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper][offset-wrapper], .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper][offset-wrapper] {
-        width: 200px;
+    .time-calc form[id=time-conversion] [class=form-section] [class=select-wrapper][offset-wrapper],
+    .time-calc form[id=time-conversion] [class=form-section] [class=input-wrapper][offset-wrapper] {
+        width: auto;
     }
 }
 
@@ -106,11 +123,11 @@
     }
 }
 
-.time-calc p[class=results] {
+.time-calc p[class*="results"] {
     display: none;
     font-size: 20px;
 }
 
-.time-calc p[class=results][shown] {
+.time-calc p[class*="results"][shown] {
     display: block;
 }

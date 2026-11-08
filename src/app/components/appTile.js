@@ -35,7 +35,7 @@ export default function AppTile(props) {
                     priority
                 />
             </div>
-            <span className="text-center leading-tight">{props.name}</span>
+            <span className="text-center leading-tight font-[family-name:var(--font-cabin)]! font-bold">{props.name}</span>
         </Link>
     );
 }

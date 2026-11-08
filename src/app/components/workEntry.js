@@ -5,10 +5,10 @@ export default function WorkEntry (props) {
 
     return (
         <>
-            <p><b>{entry.job},</b> {entry.startDate} — {entry.endDate}</p>
-            <p>{entry.company}, {entry.location}</p>
+            <p className="font-[family-name:var(--font-cabin)]!"><b>{entry.job},</b> {entry.startDate} — {entry.endDate}</p>
+            <p className="font-[family-name:var(--font-cabin)]!">{entry.company}, {entry.location}</p>
 
-            <ul className="mt-1 ml-8">
+            <ul className="mt-1 ml-8 font-[family-name:var(--font-cabin)]!">
                 {entry.impact.map((x, index) => 
                     typeof(x) === 'string'
                     ?

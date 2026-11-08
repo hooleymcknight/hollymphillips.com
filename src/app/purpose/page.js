@@ -3,26 +3,26 @@
 export default function Purpose() {
 
     return (
-        <main className="max-w-[1000px] mx-auto relative">
-            <h1 className="text-center">Purpose</h1>
-            <p>
+        <main className="max-w-[800px]! mx-auto relative">
+            <h1 className="text-center mb-3">Purpose</h1>
+            <p className="font-[family-name:var(--font-cabin)]!">
                 As a developer, my goal is to help create a Internet that feels more genuine and welcoming. 
                 <br/><br/>
                 I believe this involves taking lessons and inspiration from the Internet of the past, and 
-                figuring out an exciting way to integrate those vibes with the bleeding edge of tech that 
-                is available today.
+                figuring out an exciting way to integrate those vibes with the bleeding edge of tech that's 
+                available today.
                 <br/><br/>
             </p>
 
             <h2>Backstory</h2>
-            <p>
+            <p className="font-[family-name:var(--font-cabin)]!">
                 I personally have grown to feel very dehumanized most of the time I interact with things online. 
                 I recall a moment in late 2024, when I was watching a short sports video on a social media app, 
                 and it hit me all of a sudden that I felt disconnected from humanity and from myself. The video 
                 was great, but it wasn't sent to me by a friend or family member. It was sent to me by an 
                 algorithm, and my enjoyment of it was commodified. No one was there to enjoy the video with me.
                 <br/><br/>
-                At this moment, I immediately uninstalled all social media from my phone. I began reaching 
+                At that moment, I immediately uninstalled all social media from my phone. I began reaching 
                 out to friends to connect with them, talk with them more directly, spend more time with them. 
                 Even in online spaces, I began to focus my energy much more on building deeper relationships 
                 with the people I knew, and having more genuine and personal interactions. This shift in my 

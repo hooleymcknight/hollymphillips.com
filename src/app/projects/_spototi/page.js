@@ -12,7 +12,7 @@ export default function Spototi() {
                 Your browser does not support the video tag.
             </video>
 
-            <p className="max-w-[600px] mx-auto mb-16">
+            <p className="max-w-[600px] mx-auto mb-16 font-[family-name:var(--font-cabin)]!">
                 description placeholder.
                 the above video is not of this app.
             </p>

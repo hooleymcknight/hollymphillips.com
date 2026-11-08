@@ -16,7 +16,7 @@ export default function EDHREC() {
 
             <StatusBadge status="Complete" notes="" />
 
-            <div className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
+            <div className="max-w-[600px] w-full text-[18px] mx-auto mb-16 font-[family-name:var(--font-cabin)]!">
                 <p>
                     Quickly import a list of MTG cards into your EDHREC clipboard instead of looking them up one at a time. 
                     Paste a deck list, click submit, and the cards appear in your EDHREC clipboard ready for recommendations.

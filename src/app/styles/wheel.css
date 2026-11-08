@@ -4,6 +4,10 @@
 	margin: auto;
 }
 
+.games-list-desc p {
+    font-family: var(--font-cabin);
+}
+
 .wheel {
 	padding: 30px 0 40px;
 	overflow: hidden;
@@ -338,6 +342,7 @@
 	text-overflow: ellipsis;
 	cursor: pointer;
 	transition: all 0.2s ease;
+    font-family: var(--font-cabin) !important;
 }
 
 .games-list [class="button-tile"] p[class="game-desc"] span {
@@ -385,6 +390,7 @@
 	z-index: 2;
 	width: 110%;
 	text-align: center;
+    font-family: var(--font-cabin);
 }
 
 @media (max-width: 500px) {

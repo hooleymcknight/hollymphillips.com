@@ -7,11 +7,11 @@ const TimeCalc = (props) => {
 
   return (
     <div>
-      <h1>Time Conversion Calculator</h1>
-      <p>This app was built originally for use in scheduling tests for clients through CRO A/B testing apps. The use of this calculator may seem confusing here. This is only just a display of a tool I built.</p>
-      <p><a href={tsLink} target="_blank" alt="link to this project in a TypeScript playground">Click here</a> to see a bare-bones version of this project in a TypeScript playground.</p>
+      <h1 className="text-center mb-4">Time Conversion Calculator</h1>
+      <p className="font-[family-name:var(--font-cabin)]!">This app was built originally for use in scheduling tests for clients through CRO A/B testing apps. The use of this calculator may seem confusing here. This is only just a display of a tool I built.</p>
+      <p className="font-[family-name:var(--font-cabin)]! mt-2"><a href={tsLink} target="_blank" alt="link to this project in a TypeScript playground">Click here</a> to see a bare-bones version of this project in a TypeScript playground.</p>
 
-      <form id="time-conversion" onSubmit={e => formSubmit(e)}>
+      <form id="time-conversion" onSubmit={e => formSubmit(e)} className="w-fit mx-auto">
         <div className="form-section">
 
           <div className="select-wrapper">
@@ -65,7 +65,7 @@ const TimeCalc = (props) => {
         </div>
       </form>
 
-      <p className="results">The time to set in the scheduler is: <b></b></p>
+      <p className="results text-center font-[family-name:var(--font-cabin)]!">The time to set in the scheduler is: <b></b></p>
     </div>
   )
 }

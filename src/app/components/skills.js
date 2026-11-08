@@ -13,14 +13,13 @@ const boldenSkills = (skillset) => {
 
 const SkillSection = (props) => {
     const skills = props.data;
-    console.log(skills);
 
     return (
         <>
             {Object.keys(skills).map((x, index) =>
                 <div key={index} className="mb-4">
-                    <b className="skill-header">{x}:</b>
-                    <p className="skills" dangerouslySetInnerHTML={createMarkup(boldenSkills(skills[x]).join(', '))}></p>
+                    <b className="skill-header font-[family-name:var(--font-cabin)]!">{x}:</b>
+                    <p className="skills font-[family-name:var(--font-cabin)]!" dangerouslySetInnerHTML={createMarkup(boldenSkills(skills[x]).join(', '))}></p>
                 </div>
             )}
         </>

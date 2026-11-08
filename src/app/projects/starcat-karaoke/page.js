@@ -22,10 +22,10 @@ export default function videovomitTv() {
 
             <StatusBadge status="Active" notes="" />
 
-            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16 font-[family-name:var(--font-cabin)]!">
                 I built this karaoke app for backyard BBQs, inspired by an 
                 old karaoke desktop application I remember playing with as a kid. My script 
-                takes songs in as purchased audio then runs them through Demucs to split the 
+                takes in purchased audio, then runs it through Demucs to split the 
                 vocals out, LRCLIB to grab the lyrics, and WhisperX to align the lyrics and 
                 audio. The player I built displays the timed lyrics, wiping each word as it lands.
                 <br/><br/>

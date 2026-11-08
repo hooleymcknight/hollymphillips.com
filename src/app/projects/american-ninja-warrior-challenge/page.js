@@ -21,11 +21,11 @@ export default function ANW() {
                 allowFullScreen
             >
             </iframe>
-            <small className="block max-w-[800px] text-right mx-auto mt-1 mb-8">This video does not belong to me.</small>
+            <small className="block max-w-[800px] text-right mx-auto mt-1 mb-8 font-[family-name:var(--font-cabin)]!">This video does not belong to me.</small>
 
             <StatusBadge status="Complete" notes="released 2019" />
 
-            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16 font-[family-name:var(--font-cabin)]!">
                 American Ninja Warrior Challenge was one of the two video games I worked on with Gaming Corps Austin in 2018. 
                 My role was Developer Support / QA Lead; most of my work on ANW was QA-related. I also assisted with set decorations. 
                 This game was coded with C# in Unity.

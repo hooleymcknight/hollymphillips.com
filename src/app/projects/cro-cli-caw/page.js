@@ -7,7 +7,7 @@ export default function CAW() {
     return (
         <main className="max-w-[1000px] mx-auto">
             <h1 className="text-center">CRO CLI Tool / CAW App</h1>
-            <h4 className="text-center">NodeJS Script / NextJS Website</h4>
+            <h4 className="text-center">Node.js Script / Next.js Website</h4>
 
             <img
                 width="800" height="450" className="mx-auto my-8"
@@ -17,7 +17,7 @@ export default function CAW() {
 
             <StatusBadge status="Archived" notes="CLI complete, CAW app retired" />
 
-            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16">
+            <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16 font-[family-name:var(--font-cabin)]!">
                 After working in CRO for several years, I decided to build my own CRO tools for personal and contract use. 
                 The first tool I built was a command line interface tool that quickly generates code templates based on the 
                 client's information and the number of variations in the test.

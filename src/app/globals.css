@@ -120,6 +120,11 @@ h2 {
     display: block;
 }
 
+.resume-content *:not(h2) {
+    font-family: var(--font-cabin);
+}
+
+
 #intro-section { margin-bottom: 10px; }
 #intro-section + .lined {
     display: block;

@@ -97,49 +97,58 @@ export default function MedTool() {
 
     return (
         <main className="max-w-[1000px] mx-auto">
-            <div className="med-tool-selectors">
-                <div className="med-selector  my-2">
-                    <label htmlFor="hours-gap">Hours Between Doses:</label>
-                    <div className="flex flex-row items-center gap-2">
-                        <input type="range" name="hours-gap" min="3" max="12" onChange={(e) => {setHoursGap(e.target.value)}} defaultValue={hoursGap} />
-                        <span className="text-lg">{hoursGap}</span>
+            <div className="max-w-[600px] mx-auto w-fit">
+                <h1 className='text-center mb-4'>Med Tool</h1>
+                <div className="med-tool-selectors font-[family-name:var(--font-cabin)]!">
+
+                    <div className="flex flex-row gap-6 items-center justify-between">
+                        <div className="med-selector flex flex-row flex-wrap my-2">
+                            <label htmlFor="starting-time">Starting Time:</label>
+                            <div>
+                                <select id="starting-time" defaultValue={startingTime}
+                                    onChange={(e) => {setStartingTime(e.target.value)}}
+                                    className="bg-[#ffffff66] rounded-[4px] border-[1px] mx-2 px-1"
+                                >
+                                    {times.map(x =>
+                                    <option key={x} value={x}>{`${x}:00`}</option>
+                                    )}
+                                </select>
+                            </div>
+                        </div>
+                        <div className="med-selector flex flex-row flex-wrap my-2">
+                            <label htmlFor="starting-date">Starting Date:</label>
+                            <input type="date" id="starting-date"
+                                onChange={(e) => {startingDateHandler(e.target.value)}}
+                                className="bg-[#ffffff66] rounded-[4px] border-[1px] mx-2 px-1"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-row gap-6 items-center justify-between">
+                        <div className="med-selector  my-2">
+                            <label htmlFor="hours-gap">Hours Between Doses:</label>
+                            <div className="flex flex-row items-center gap-2">
+                                <input type="range" name="hours-gap" min="3" max="12" onChange={(e) => {setHoursGap(e.target.value)}} defaultValue={hoursGap} />
+                                <span className="text-lg">{hoursGap}</span>
+                            </div>
+                        </div>
+                        <div className="med-selector flex flex-row flex-wrap my-2">
+                            <label htmlFor="title">Title:</label>
+                            <input type="text" id="title"
+                                onChange={(e) => {setTitle(e.target.value)}}
+                                className="bg-[#ffffff66] rounded-[4px] border-[1px] mx-2 px-1"
+                            />
+                        </div>
                     </div>
                 </div>
-                <div className="med-selector flex flex-row flex-wrap my-2">
-                    <label htmlFor="starting-time">Starting Time:</label>
-                    <div>
-                        <select id="starting-time" defaultValue={startingTime}
-                            onChange={(e) => {setStartingTime(e.target.value)}}
-                            className="bg-[#ffffff66] rounded-[4px] border-[1px] mx-2 px-1"
-                        >
-                            {times.map(x =>
-                            <option key={x} value={x}>{`${x}:00`}</option>
-                            )}
-                        </select>
-                    </div>
-                </div>
-                <div className="med-selector flex flex-row flex-wrap my-2">
-                    <label htmlFor="starting-date">Starting Date:</label>
-                    <input type="date" id="starting-date"
-                        onChange={(e) => {startingDateHandler(e.target.value)}}
-                        className="bg-[#ffffff66] rounded-[4px] border-[1px] mx-2 px-1"
-                    />
-                </div>
-                <div className="med-selector flex flex-row flex-wrap my-2">
-                    <label htmlFor="title">Title:</label>
-                    <input type="text" id="title"
-                        onChange={(e) => {setTitle(e.target.value)}}
-                        className="bg-[#ffffff66] rounded-[4px] border-[1px] mx-2 px-1"
-                    />
-                </div>
+
+                <button className="button button-inverse mt-4 w-fit mx-auto block" onClick={exportToImage}>Export</button>
             </div>
 
-            <button className="button button-inverse mt-8" onClick={exportToImage}>Export</button>
-
-            <div id="output-section" className="py-8">
+            <div id="output-section" className="py-8 w-fit mx-auto">
                 {title ? <h2 className="mb-4 mx-2">{title}</h2> : ''}
 
-                <div className="output-times flex flex-row flex-wrap">
+                <div className="output-times flex flex-row flex-wrap justify-center">
 
                     {[...days].slice(0, repeatableDays).map((dayNumber) => 
                         <table key={dayNumber} className={`day-section min-w-[200px] border-[2px] m-2`}>
@@ -160,7 +169,7 @@ export default function MedTool() {
                                 { times.map(x =>
                                     <tr key={x} data-x={x}
                                         data-active={allHoursToMedicate[`${dayNumber}`]?.includes(x) || "false"}
-                                        className={`time-slot
+                                        className={`time-slot font-[family-name:var(--font-cabin)]! 
                                             ${allHoursToMedicate[`${dayNumber}`]?.includes(x) ? 'bg-[var(--foreground)] text-[var(--background)]' : ''}
                                         `}
                                     >
