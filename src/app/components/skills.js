@@ -17,9 +17,9 @@ const SkillSection = (props) => {
     return (
         <>
             {Object.keys(skills).map((x, index) =>
-                <div key={index} className="mb-4">
-                    <b className="skill-header font-[family-name:var(--font-cabin)]!">{x}:</b>
-                    <p className="skills font-[family-name:var(--font-cabin)]!" dangerouslySetInnerHTML={createMarkup(boldenSkills(skills[x]).join(', '))}></p>
+                <div key={index} className="mb-4 ml-[8px]">
+                    <b className="skill-header font-[family-name:var(--font-cabin)]! inline-block ml-[-8px] mr-[8px]">{x}:</b>
+                    <p className="skills font-[family-name:var(--font-cabin)]! inline" dangerouslySetInnerHTML={createMarkup(boldenSkills(skills[x]).join(', '))}></p>
                 </div>
             )}
         </>

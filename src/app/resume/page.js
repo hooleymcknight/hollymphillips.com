@@ -8,13 +8,16 @@ import resumeData from '@/app/data/resume.json';
 
 const ref = resumeData.ref;
 const contacts = resumeData['Contact Info'];
+const summary = resumeData['Summary'];
 const work = resumeData['Work Experience'];
 const skills = resumeData['Skills'];
-const education = resumeData['Education & Certifications'];
+const education = resumeData['Education'];
+const projects = resumeData['Projects'];
 
 
 import WorkEntry from "../components/workEntry";
 import SkillSection from "../components/skills";
+import ProjectEntry from "../components/projectEntry";
 
 export default function Resume() {
 
@@ -34,12 +37,12 @@ export default function Resume() {
                 <div id="intro-section" className="flex flex-row flex-row-reverse mx-auto my-8 max-w-[500px] gap-8">
                     <div className="grow-[0.75] flex flex-col">
                         <h2>{contacts.name}</h2>
+                        <p>{contacts.location}</p>
                         {
                             Object.keys(contacts).filter(x => typeof(contacts[x]) === 'object').map(x => 
                                 <Link key={contacts[x].text}
                                     className="underline decoration-dotted hover:decoration-solid underline-offset-4 font-[family-name:var(--font-cabin)]!"
                                     href={contacts[x].href}
-                                    alt={contacts[x].alt}
                                     target="_blank"
                                 >
                                     {contacts[x].text}
@@ -54,7 +57,11 @@ export default function Resume() {
                     </div>
                 </div>
 
-                <div className="lined max-w-[600px] mx-auto"><span className="w-full">&nbsp;</span></div>
+                <div id="summary" className="max-w-[600px] mx-auto mt-6 font-[family-name:var(--font-cabin)]">
+                    {summary}
+                </div>
+
+                <div className="lined max-w-[600px] mx-auto mb-6"><span className="w-full">&nbsp;</span></div>
 
                 <div id="skills" className="max-w-[600px] mx-auto mb-8">
                     <h2 className="mb-2">Skills</h2>
@@ -73,8 +80,17 @@ export default function Resume() {
                     )}
                 </div>
 
+                <div id="projects" className="max-w-[600px] mx-auto mb-8">
+                    <h2 className="mb-2">Projects</h2>
+                    {projects.map(x =>
+                        <div key={x.name} className="mb-4">
+                            <ProjectEntry entry={x} />
+                        </div>
+                    )}
+                </div>
+
                 <div id="education" className="max-w-[600px] mx-auto mb-8">
-                    <h2 className="mb-2">Education & Certifications</h2>
+                    <h2 className="mb-2">Education</h2>
                     {education.map((x, index) =>
                         <p key={index} className="font-[family-name:var(--font-cabin)]!" dangerouslySetInnerHTML={createMarkup(x)}></p>
                     )}

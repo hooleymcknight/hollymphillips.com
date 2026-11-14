@@ -7,6 +7,7 @@
     },
     "Contact Info": {
         "name": "Holly M. Phillips",
+        "location": "Remote (Pacific Time)",
         "cell": {
             "href": "tel:+19364251225",
             "alt": "phone number: 936-425-1225",
@@ -44,53 +45,46 @@
             }
         }
     },
+    "Summary": "Full-stack developer with 8+ years of experience building web apps, internal tools and desktop software in JavaScript, TypeScript and Node.js. Most recently led process improvement for a cross-functional team: finding the friction in people's work, automating it, and getting changes approved and rolled out. Seeking a remote senior or lead role.",
     "Work Experience": [
         {
             "job": "Development Lead, Technology",
             "company": "Fusion92",
-            "location": "Tacoma, Washington",
+            "location": "Remote",
             "startDate": "February 2025",
             "endDate": "October 2026",
             "impact": [
-                "Improved team effectiveness and morale by tracking and analyzing workflow data, then building and carrying out improvement plans",
-                "Increased team output by reviewing incoming tasks, estimating level of effort, and delegating to the right team members",
-                "Eliminated wasted time by building tools that automated repetitive work processes",
-                "Ensured data accuracy by auditing every stage of the CRO testing process across all clients"
+                "Owned process improvement for a 5-person cross-functional team of developers, UI/UX designers and project managers: met regularly with each person to identify the most stressful and time-consuming parts of their work",
+                "Built a Node.js CLI that generated standardized A/B test templates, replacing each developer's ad hoc setup with one shared structure so code was consistent across the team",
+                "Consolidated scattered documentation for client brands and sites into a single wiki, giving the team one reliable source of truth",
+                "Proposed workflow changes to the department head, won approval, and implemented them across the team",
+                "Audited every stage of the testing pipeline across all client accounts to verify data accuracy"
             ]
         },
         {
             "job": "Front End Developer",
             "company": "Fusion92",
-            "location": "Tacoma, Washington",
-            "startDate": "September 2023",
+            "location": "Remote",
+            "startDate": "June 2023",
             "endDate": "February 2025",
             "impact": [
-                "Made sites more user-friendly for both clients and their customers by making updates in WordPress (PHP, SASS, JavaScript) and other platforms (Vue, Nuxt)",
-                "Developed functional and accessible email campaigns for various clients",
-                "Assisted with the migration process from an external platform to an in-house one for hundreds of sites"
-            ]
-        },
-        {
-            "job": "Freelance Developer",
-            "company": "Fusion92",
-            "location": "Tacoma, Washington",
-            "startDate": "June 2023",
-            "endDate": "September 2023",
-            "impact": [
-                "Empowered clients to update their WordPress content by making field updates that give clients more flexibility and control",
-                "Improved site usability for customers by making styling and content changes with SASS and PHP"
+                "Hired full-time after a three-month freelance contract",
+                "Made sites more user-friendly for clients and their customers through updates in WordPress (PHP, Sass, JavaScript), Vue and Nuxt",
+                "Gave clients more control over their own content by building flexible WordPress field structures",
+                "Developed functional and accessible email campaigns for multiple clients",
+                "Assisted with migrating hundreds of sites from an external platform to an in-house one"
             ]
         },
         {
             "job": "Front-End Engineer",
             "company": "surefoot",
-            "location": "Seattle, Washington",
+            "location": "Remote",
             "startDate": "March 2022",
             "endDate": "November 2022",
             "impact": [
-                "Developed tests for a handful of clients and shared code with the team using Git",
-                "Assisted with processes improvements and documentation of work tools",
-                "Reduced team stress and confusion by creating and maintaining a detailed wiki for all things related to the company"
+                "Developed A/B tests for multiple clients, collaborating through Git",
+                "Created and maintained the company wiki, the team's single reference for tools and processes",
+                "Contributed to process improvements and documentation of internal tooling"
             ]
         },
         {
@@ -100,9 +94,9 @@
             "startDate": "September 2021",
             "endDate": "March 2022",
             "impact": [
-                "Installed A/B testing code and revenue tracking scripts for all incoming clients",
-                "Improved developer throughput by training and advising a team of 7 developers",
-                "Personalized the testing plan for 40+ clients by leading strategy sessions with the UI/UX design team"
+                "Trained and advised a team of 7 developers, improving throughput",
+                "Led strategy sessions with the UI/UX design team to personalize testing plans for 40+ clients",
+                "Installed testing and revenue-tracking code for all incoming clients"
             ]
         },
         {
@@ -112,9 +106,9 @@
             "startDate": "October 2019",
             "endDate": "September 2021",
             "impact": [
-                "Improved website usability by building tests with JavaScript, jQuery, and CSS",
-                "Analyzed test data to determine how to best improve client revenue",
-                "Communicated all aspects of the CRO process to 17+ clients"
+                "Built site experiments with JavaScript, jQuery and CSS to improve usability",
+                "Analyzed test data to determine how best to improve client revenue",
+                "Served as the technical point of contact for 17+ clients"
             ]
         },
         {
@@ -124,10 +118,9 @@
             "startDate": "September 2015",
             "endDate": "August 2020",
             "impact": [
-                "Started non-profit 501c3 and lead staff of over 20 people until its dissolution in 2020",
-                "Managed all technology for the online community (website front-end & back-end)",
-                "Increased engagement in Discord servers by building Discord chat bots to manage role distribution and host an interactive text-based adventure game",
-                "Engaged community of over 170 members by building and maintaining organization's website"
+                "Founded a 501(c)(3) non-profit and led a staff of 20+ until its dissolution in 2020",
+                "Built and maintained the organization's website front end and back end for a community of 170+ members",
+                "Built Discord bots to manage role distribution and run an interactive text-based adventure game"
             ]
         },
         {
@@ -138,52 +131,85 @@
             "endDate": "November 2018",
             "impact": [
                 {
-                    "<u>Voyage of the Dead</u> (released in 2019)": [
-                        "Relieved pressure on devs by implementing game logic and fixing bugs using Unreal Engine 4 / C++",
-                        "Kept developer priorities in order by leading QA team's bug tracking and reporting for over 500 bugs"
+                    "<em>Voyage of the Dead</em> (released in 2019)": [
+                        "Implemented game logic and fixed bugs in Unreal Engine 4 / C++",
+                        "Led the QA team's bug tracking and reporting across 500+ bugs"
                     ]
                 },
                 {
-                    "<u>American Ninja Warrior Challenge</u> (released in 2019)": [
-                        "Ensured game quality by automating build scripts in Unity, C#, and Jenkins, and by testing all aspects of the product and discovering new bugs"
+                    "<em>American Ninja Warrior Challenge</em> (released in 2019)": [
+                        "Automated build scripts in Unity, C# and Jenkins; tested all aspects of the product and reported new bugs"
                     ]
                 }
             ]
         }
     ],
+    "Projects": [
+        {
+            "name": "RFID Inventory",
+            "stack": "React Native, Node.js/Express, MySQL",
+            "links": [
+                { "label": "App repo", "url": "https://github.com/hooleymcknight/rfid-inventory-app" },
+                { "label": "API repo", "url": "https://github.com/hooleymcknight/rfid-inventory-api" }
+            ],
+            "impact": [
+                "Mobile app for tracking physical belongings: each storage container carries an RFID tag; scanning it lists the contents, and items move between containers with a\u00A0scan",
+                "Built the REST API in Express with a MySQL schema designed from scratch to model rooms, containers and\u00A0items",
+                "Deployed on a DigitalOcean Ubuntu server with\u00A0Nginx"
+            ]
+        },
+        {
+            "name": "Twitch HUD",
+            "stack": "Tauri (Rust), React, TypeScript",
+            "links": [
+                { "label": "Repo", "url": "https://github.com/hooleymcknight/twitch-hud" }
+            ],
+            "impact": [
+                "Windows desktop overlay with a configurable widget system: an interact mode toggled by hotkey lets you create, move, edit and delete widgets on top of fullscreen\u00A0games",
+                "Chat widget reads Twitch IRC over WebSocket in real time, with full and popup display modes; content widgets hold freeform text such as\u00A0checklists",
+                "Pulls channel emotes from the Twitch API using app-token\u00A0auth"
+            ]
+        },
+        {
+            "name": "Spooterfi",
+            "stack": "Tauri (Rust), React, TypeScript",
+            "links": [
+                { "label": "Repo", "url": "https://github.com/hooleymcknight/spooterfi" }
+            ],
+            "impact": [
+                "Desktop Spotify companion for streamers: authenticates with Spotify OAuth and writes the now-playing track to local text files that OBS reads as a text source, so the overlay styles however the streamer\u00A0wants",
+                "Pulls the full playlist library from the Spotify Web API, handling pagination and rate\u00A0limits"
+            ]
+        }
+    ],
     "Skills": {
         "Languages": [
-            "TypeScript", "React", "Next.js", "Node.js", "Express.js", "Vue.js", "Python", "PHP"
-        ],
-        "Platforms": [
-            "React\u00A0Native", "Electron", "Browser extensions (Chrome, Firefox)"
-        ],
-        "Front-end": [
-            "HTML", "CSS", "Sass", "Tailwind\u00A0CSS", "WCAG"
-        ],
-        "CMS": [
-            "Shopify (Liquid, 2.0, App Development, Checkout UI Extensions)", "Salesforce Marketing Cloud", "WordPress", "HubSpot", "Contentful", "Magento", "Recharge"
-        ],
-        "Database": [
-            "MySQL", "Prisma", "PostgreSQL", "MongoDB", "MariaDB"
-        ],
-        "Experimentation": [
-            "GA4", "Convert", "Dynamic\u00A0Yield", "Optimizely", "VWO", "AB\u00A0Tasty", "Monetate", "Adobe\u00A0Target"
-        ],
-        "Tools": [
-            "Git", "JIRA", "ClickUp", "Windows", "macOS", "Linux (Ubuntu, Zorin)"
-        ],
-        "Infrastructure": [
-            "Nginx", "Apache", "Amazon Web Services (AWS)"
+            "JavaScript", "TypeScript", "Python", "PHP", "SQL", "Rust\u00A0(learning)"
         ],
         "Backend": [
-            "JWTs", "GraphQL"
+            "Node.js", "Express.js", "REST APIs", "JWT auth"
+        ],
+        "Front-end": [
+            "React", "Next.js", "Vue.js", "React\u00A0Native", "HTML", "CSS", "Sass", "Tailwind\u00A0CSS", "WCAG\u00A0accessibility"
+        ],
+        "Desktop & extensions": [
+            "Tauri", "Electron", "Chrome and Firefox extensions"
+        ],
+        "Databases": [
+            "MySQL", "Prisma", "PostgreSQL", "MongoDB"
+        ],
+        "Infrastructure": [
+            "Linux (Ubuntu)", "Nginx", "Apache", "AWS", "DigitalOcean"
+        ],
+        "Platforms & CMS": [
+            "Shopify (Liquid, App Development, Checkout UI Extensions)", "WordPress", "HubSpot", "Contentful", "Salesforce Marketing\u00A0Cloud"
+        ],
+        "Tools": [
+            "Git", "JIRA", "ClickUp", "GA4", "A/B Testing Platforms (Convert, Optimizely, VWO)"
         ]
     },
-    "Education & Certifications": [
+    "Education": [
         "<b>Bachelor of Science</b> in Mathematics, <b>University of North Texas,</b> 2015",
-        "<b>Associate of Applied Science</b> in Air Traffic Control, <b>Texas State Technical College,</b> 2017",
-        "<b>W3schools Certified JavaScript Developer,</b> 2019",
-        "<b>AB Tasty User (Essentials),</b> 2022"
+        "<b>Associate of Applied Science</b> in Air Traffic Control, <b>Texas State Technical College,</b> 2017"
     ]
 }
