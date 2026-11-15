@@ -14,7 +14,7 @@ export const exportPDF = () => {
 
     const pageWidth = doc.internal.pageSize.getWidth();
     const pageHeight = doc.internal.pageSize.getHeight();
-    const margin = 45;
+    const margin = 40;
     const contentWidth = pageWidth - margin * 2;
     const LINK_COLOR = [40, 80, 200];
     let y = margin;
@@ -115,6 +115,27 @@ export const exportPDF = () => {
         });
     };
 
+    // How tall a block of wrapped text will be, without drawing it
+    const textHeight = (text, x = margin, { size = 10, weight = 'normal' } = {}) => {
+        doc.setFont('helvetica', weight);
+        doc.setFontSize(size);
+        return doc.splitTextToSize(String(text), contentWidth - (x - margin)).length * size * 1.35;
+    };
+
+    // Same walk as writeBullets, but only adds up the height
+    const bulletsHeight = (bullets) => {
+        if (!Array.isArray(bullets)) return 0;
+        return bullets.reduce((total, b) => {
+            if (typeof b === 'string') return total + textHeight(`• ${stripHtml(b)}`, margin + 10);
+            if (b && typeof b === 'object') {
+                const label = Object.keys(b)[0];
+                const subs = (b[label] || []).reduce((t, sub) => t + textHeight(`• ${stripHtml(sub)}`, margin + 24), 0);
+                return total + 2 + 13.5 + subs;
+            }
+            return total;
+        }, 0);
+    };
+
     // Section heading with underline
     const heading = (title) => {
         // 34 for the heading itself + room for a couple of lines under it,
@@ -213,8 +234,9 @@ export const exportPDF = () => {
     // ===== Work =====
     heading('Work Experience');
     work.forEach(entry => {
-        ensureSpace(50);
         const titleLine = entry.company ? `${entry.job} — ${entry.company}` : entry.job;
+        // keep a whole job together: if it won't fit on this page, start it on the next one
+        ensureSpace(textHeight(titleLine, margin, { size: 11, weight: 'bold' }) + 9 * 1.35 + bulletsHeight(entry.impact));
         write(titleLine, margin, { size: 11, weight: 'bold' });
 
         const dates = [entry.startDate, entry.endDate].filter(Boolean).join(' – ');
@@ -229,7 +251,8 @@ export const exportPDF = () => {
     if (projects.length) {
         heading('Projects');
         projects.forEach(entry => {
-            ensureSpace(50);
+            // keep a whole project together too (title line + links line + bullets)
+            ensureSpace(11 * 1.35 + 9 * 1.35 + bulletsHeight(entry.impact));
 
             // "Name — stack" (name bold, stack regular)
             writeParts([
@@ -243,7 +266,7 @@ export const exportPDF = () => {
             if (links.length) {
                 const parts = [];
                 links.forEach((link, i) => {
-                    if (i > 0) parts.push({ text: '  &  ' });
+                    if (i > 0) parts.push({ text: '  •  ' });
                     if (links.length > 1) parts.push({ text: `${link.label}: ` });
                     parts.push({ text: link.url.replace(/^https?:\/\/(www\.)?/, ''), url: link.url });
                 });
