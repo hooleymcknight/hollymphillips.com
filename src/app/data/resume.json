@@ -56,7 +56,7 @@
             "impact": [
                 "Owned process improvement for a 5-person cross-functional team of developers, UI/UX designers and project managers: met regularly with each person to identify the most stressful and time-consuming parts of their work",
                 "Built a Node.js CLI that generated standardized A/B test templates, replacing each developer's ad hoc setup with one shared structure so code was consistent across the team",
-                "Consolidated scattered documentation for client brands and sites into a single wiki, giving the team one reliable source of truth",
+                "Consolidated scattered documentation for 25 client brands and sites into a single wiki, giving the team one reliable source of truth",
                 "Proposed workflow changes to the department head, won approval, and implemented them across the team",
                 "Audited every stage of the testing pipeline across all client accounts to verify data accuracy"
             ]
@@ -177,8 +177,8 @@
                 { "label": "Repo", "url": "https://github.com/hooleymcknight/spooterfi" }
             ],
             "impact": [
-                "Desktop Spotify companion for streamers: authenticates with Spotify OAuth and writes the now-playing track to local text files that OBS reads as a text source, so the overlay styles however the streamer\u00A0wants",
-                "Pulls the full playlist library from the Spotify Web API, handling pagination and rate\u00A0limits"
+                "Desktop Spotify companion for streamers: authenticates with Spotify OAuth and reads the now-playing track from the Spotify Web\u00A0API",
+                "Writes the track to local text files that OBS reads as a text source, so the overlay styles however the streamer\u00A0wants"
             ]
         }
     ],
