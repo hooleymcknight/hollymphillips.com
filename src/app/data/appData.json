@@ -83,13 +83,6 @@
         "hoverSrc": "/homepage-icons/tierator-hover.png",
         "category": "projects"
     },
-    "Time Conversion Calculator": {
-        "id": "timeConvCalc",
-        "imageSrc": "/homepage-icons/time-conversion-calc.png",
-        "imageAlt": "globe icon with clock icon in front of it",
-        "hoverSrc": "/homepage-icons/time-conversion-calc-hover.png",
-        "category": "projects"
-    },
     "Voyage of the Dead": {
         "id": "votd",
         "imageSrc": "/homepage-icons/votd.png",
