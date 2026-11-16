@@ -14,7 +14,7 @@ export default function GTK() {
                 Your browser does not support the video tag.
             </video>
 
-            <StatusBadge status="Active" notes="evaluating frameworks for a rebuild" />
+            <StatusBadge status="Paused" notes="evaluating frameworks for a rebuild" />
 
             <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16 font-[family-name:var(--font-cabin)]!">
                 The Guess the Killer app is one of the most time-saving applications I've built for someone. It is estimated to 

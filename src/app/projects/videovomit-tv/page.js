@@ -14,7 +14,7 @@ export default function videovomitTv() {
                 Your browser does not support the video tag.
             </video>
 
-            <StatusBadge status="Active" notes="" />
+            <StatusBadge status="Paused" notes="resuming once self-hosted" />
 
             <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16 font-[family-name:var(--font-cabin)]!">
                 Built using Next.js, videovomit.tv is a website for content creator videovomit. This 

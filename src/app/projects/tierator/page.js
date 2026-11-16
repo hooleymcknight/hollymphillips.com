@@ -9,11 +9,10 @@ export default function Tierator() {
             <h1 className="text-center">Tierator</h1>
             <h4 className="text-center">Vue.js Website</h4>
 
-            <img
-                width="800" height="450" className="mx-auto my-8"
-                src="/projects/tierator/tierator_v2.gif"
-                alt="gif of the Tierator site, moving and adding entries"
-            />
+            <video width="800" height="541" controls loop autoPlay={true} muted className="mx-auto my-8">
+                <source src="/projects/tierator/tierator_v2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
 
             <StatusBadge status="Archived" notes="" />
 

@@ -20,6 +20,13 @@
         "hoverSrc": "/homepage-icons/wheel-hover.png",
         "category": "projects"
     },
+    "Twitch HUD": {
+        "id": "twitchHUD",
+        "imageSrc": "/homepage-icons/hud.png",
+        "imageAlt": "widgets in a square reticle",
+        "hoverSrc": "/homepage-icons/hud-hover.png",
+        "category": "projects"
+    },
     "Spooterfi": {
         "id": "spooterfi",
         "imageSrc": "/homepage-icons/spooterfi.png",
@@ -34,25 +41,11 @@
         "hoverSrc": "/homepage-icons/starcat-karaoke-hover.png",
         "category": "projects"
     },
-    "videovomit.tv": {
-        "id": "vvtv",
-        "imageSrc": "/homepage-icons/vvtv.png",
-        "imageAlt": "icon of stylized text: Video Vomit",
-        "hoverSrc": "/homepage-icons/vvtv-hover.png",
-        "category": "projects"
-    },
-    "CRO CLI / CAW": {
-        "id": "caw",
-        "imageSrc": "/homepage-icons/cro-cli.png",
-        "imageAlt": "icon of a crow",
-        "hoverSrc": "/homepage-icons/cro-cli-hover.png",
-        "category": "projects"
-    },
-    "GTK": {
-        "id": "gtk",
-        "imageSrc": "/homepage-icons/gtk.png",
-        "imageAlt": "icon with rhombus and a hook inside",
-        "hoverSrc": "/homepage-icons/gtk-hover.png",
+    "RFID Inventory": {
+        "id": "RFID",
+        "imageSrc": "/homepage-icons/rfid.png",
+        "imageAlt": "radio waves",
+        "hoverSrc": "/homepage-icons/rfid-hover.png",
         "category": "projects"
     },
     "GoG Comm": {
@@ -62,11 +55,18 @@
         "hoverSrc": "/homepage-icons/gogcomm-hover.png",
         "category": "projects"
     },
-    "EDHREC Importer": {
-        "id": "edhrecImporter",
-        "imageSrc": "/homepage-icons/edhrec.png",
-        "imageAlt": "Mozilla's add-on icon with an import icon over it",
-        "hoverSrc": "/homepage-icons/edhrec-hover.png",
+    "videovomit.tv": {
+        "id": "vvtv",
+        "imageSrc": "/homepage-icons/vvtv.png",
+        "imageAlt": "icon of stylized text: Video Vomit",
+        "hoverSrc": "/homepage-icons/vvtv-hover.png",
+        "category": "projects"
+    },
+    "GTK": {
+        "id": "gtk",
+        "imageSrc": "/homepage-icons/gtk.png",
+        "imageAlt": "icon with rhombus and a hook inside",
+        "hoverSrc": "/homepage-icons/gtk-hover.png",
         "category": "projects"
     },
     "Med Tool": {
@@ -74,6 +74,20 @@
         "imageSrc": "/homepage-icons/med-tool.png",
         "imageAlt": "clock icon with two medicine capsules in front",
         "hoverSrc": "/homepage-icons/med-tool-hover.png",
+        "category": "projects"
+    },
+    "CRO CLI / CAW": {
+        "id": "caw",
+        "imageSrc": "/homepage-icons/cro-cli.png",
+        "imageAlt": "icon of a crow",
+        "hoverSrc": "/homepage-icons/cro-cli-hover.png",
+        "category": "projects"
+    },
+    "EDHREC Importer": {
+        "id": "edhrecImporter",
+        "imageSrc": "/homepage-icons/edhrec.png",
+        "imageAlt": "Mozilla's add-on icon with an import icon over it",
+        "hoverSrc": "/homepage-icons/edhrec-hover.png",
         "category": "projects"
     },
     "Tierator": {

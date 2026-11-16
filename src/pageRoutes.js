@@ -25,7 +25,9 @@ const pageRoutes = {
         'navDisplay': 'Projects',
         'sublinks': {
             'jackboxWheel': '/jackbox-wheel',
+            'twitchHUD': '/twitch-hud',
             'spooterfi': '/spooterfi',
+            'RFID': '/rfid-inventory',
             'starcatKaraoke': '/starcat-karaoke',
             'vvtv': '/videovomit-tv',
             'caw': '/cro-cli-caw',

@@ -7,7 +7,7 @@ import StatusBadge from "@/app/components/projects/statusBadge";
     Your browser does not support the video tag.
 </video> */}
 
-export default function videovomitTv() {
+export default function starcatKaraoke() {
 
     return (
         <main className="max-w-[1000px] mx-auto">
@@ -20,7 +20,7 @@ export default function videovomitTv() {
                 alt="StarCat karaoke demo: choosing song, playing song"
             />
 
-            <StatusBadge status="Active" notes="" />
+            <StatusBadge status="Complete" notes="Success! Needs updates before next use" />
 
             <p className="max-w-[600px] w-full text-[18px] mx-auto mb-16 font-[family-name:var(--font-cabin)]!">
                 I built this karaoke app for backyard BBQs, inspired by an 
